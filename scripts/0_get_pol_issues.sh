@@ -1,0 +1,1 @@
+python3 ../src/scrape_isidewith.py --sort_option "popular" --fn "../data/raw/isidewith_political_issues_popular.csv" --add_dt
