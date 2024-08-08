@@ -5,7 +5,8 @@ python3 -m venv venvt
 source venv/bin/activate
 
 # install common packages I use
-pip install litellm requests beautifulsoup4 seaborn matplotlib scikit-learn pandas openai sentence-transformers scipy statsmodels
+pip install litellm requests beautifulsoup4 seaborn matplotlib scikit-learn pandas openai sentence-transformers scipy
+ statsmodels plurals
 
 # freeze versions right now
 pip freeze > requirements.txt
