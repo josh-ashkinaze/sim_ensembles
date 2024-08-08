@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # create venv
-python3 -m venv venvt
+python3 -m venv venv
 source venv/bin/activate
 
 # install common packages I use
