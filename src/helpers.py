@@ -7,7 +7,7 @@ import numpy as np
 import random 
 import logging
 import re
-import os 
+import os
 import chardet
 
 
@@ -168,7 +168,7 @@ def stargazer2latex(star, filename, add_ci=True, display_mod=False):
     
     print(f"Starting to process the Stargazer object for {filename}")
     if display_mod:
-        display(star)
+        print(star)
     base_title = star.title_text if star.title_text else "OLS regressions of additions and removals."
     
     
@@ -209,10 +209,10 @@ def make_aesthetic(hex_color_list=None, with_gridlines=False, bold_title=False, 
     sns.set(style='white', context='paper', font_scale=font_scale)
     if not hex_color_list:
         hex_color_list = [
-        "#826AED", # Medium slate blue
+        "#89DAFF", # Pale azure
         "#D41876", # Telemagenta
         "#00A896", # Persian green,
-        "#89DAFF", # Pale azure
+        "#826AED", # Medium slate blue
         "#F7B2AD", # Melon
         "#342E37", # Dark grayish-purple
         "#7DCD85", # Emerald
