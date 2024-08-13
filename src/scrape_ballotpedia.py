@@ -136,7 +136,7 @@ def main(args):
         base_filename = os.path.basename(args.fn)
         datetime_prefix = datetime.datetime.now().strftime('%Y-%m-%d_')
         args.fn = os.path.join(base_dir, datetime_prefix + base_filename)
-
+    print(args.fn)
     df.to_csv(args.fn, index=False)
     print(f"Data saved to {args.fn}")
 
