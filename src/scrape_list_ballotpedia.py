@@ -8,6 +8,7 @@ import os
 
 """
 Description: Scrapes Ballotpedia state referendums for a given year. This was only tested for 2024 and performance not guaranteed afterwards.
+This only scrapes the yearly page, meaning it will include a description but not much detail. 
 
 Date: 2024-08-12 19:43:06
 
@@ -136,7 +137,7 @@ def main(args):
         base_filename = os.path.basename(args.fn)
         datetime_prefix = datetime.datetime.now().strftime('%Y-%m-%d_')
         args.fn = os.path.join(base_dir, datetime_prefix + base_filename)
-    print(args.fn)
+    df['ballot_no'] = [i for i in range(len(df))]
     df.to_csv(args.fn, index=False)
     print(f"Data saved to {args.fn}")
 
