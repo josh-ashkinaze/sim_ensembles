@@ -2,7 +2,8 @@
 Author: Joshua Ashkinaze
 
 Description: Scrapes individual ballot measures from Ballotpedia. This script can be used to scrape detailed information
-about individual ballot measures by providing a URL, a text file with URLs, or a CSV file with a 'url' column.
+about individual ballot measures by providing a URL, a text file with URLs, or a CSV file with a 'url' column. Note that if
+the url is deemed invalid (i.e., does not start with 'http://' or 'https://'), it will be skipped.
 
 Date: 2024-08-15 15:30:46
 """
@@ -14,13 +15,21 @@ import requests
 from bs4 import BeautifulSoup, NavigableString
 import re
 import pandas as pd
-from tenacity import retry, stop_after_attempt, wait_exponential
+from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
 import time
 import os
 import datetime
 
 
-@retry(stop=stop_after_attempt(5), wait=wait_exponential(multiplier=1, min=4, max=10))
+def return_none_on_failure(retry_state):
+    return None
+
+@retry(
+    stop=stop_after_attempt(5),
+    wait=wait_exponential(multiplier=1, min=4, max=10),
+    retry_error_callback=return_none_on_failure,
+    retry=retry_if_exception_type(requests.RequestException)
+)
 def fetch_html_content(url):
     """
     Fetch HTML content from a given URL with retry logic.
@@ -29,7 +38,7 @@ def fetch_html_content(url):
         url (str): The URL to fetch content from.
 
     Returns:
-        str: The HTML content of the page.
+        str or None: The HTML content of the page, or None if all retries are exhausted.
 
     Raises:
         requests.RequestException: If an error occurs while fetching the URL.
@@ -37,7 +46,6 @@ def fetch_html_content(url):
     response = requests.get(url)
     response.raise_for_status()
     return response.text
-
 
 def clean_text(text):
     """
@@ -54,6 +62,17 @@ def clean_text(text):
     text = re.sub(r'([.,!?])([^\s])', r'\1 \2', text)
     return text.strip()
 
+def is_valid_url(x):
+    """
+    Sometimes the URLs are not parsed correctly from scraping. Check if they are valid.
+
+    Args:
+        x (str): URL to check
+
+    Returns:
+        int: 1 if valid, 0 if not
+    """
+    return 1 if x.startswith('http://') or x.startswith('https://') else 0
 
 def extract_yes_means(soup):
     """
@@ -171,11 +190,14 @@ def process_urls(urls):
     total_urls = len(urls)
 
     for i, url in enumerate(urls, 1):
-        result = scrape_ballot_measure(url)
-        if result:
-            result['url'] = url
-            result['ballot_no'] = i
-            results.append(result)
+        if not is_valid_url(url):
+            print(f"Invalid URL: {url}")
+        else:
+            result = scrape_ballot_measure(url)
+            if result:
+                result['url'] = url
+                result['ballot_no'] = i
+                results.append(result)
 
         if i % max(1, total_urls // 10) == 0:
             print(f"Progress: {i}/{total_urls} URLs processed ({i / total_urls * 100:.1f}%)")
@@ -190,29 +212,29 @@ def main():
     Main function to run the ballot measure scraper.
     """
     parser = argparse.ArgumentParser(description="Scrape ballot measures from Ballotpedia.")
-    parser.add_argument("input", help="URL, text file with URLs, or CSV file with a 'url' column")
-    parser.add_argument("fn", help="Output filename")
+    parser.add_argument("--input_fn", help="URL, text file with URLs, or CSV file with a 'url' column")
+    parser.add_argument("--output_fn", help="Output filename")
     parser.add_argument("--add_dt", action="store_true", help="Add date prefix to filename")
     args = parser.parse_args()
 
-    input_data = args.input
+    input_fn = args.input_fn
 
     if args.add_dt:
-        base_dir = os.path.dirname(args.fn)
-        base_filename = os.path.basename(args.fn)
+        base_dir = os.path.dirname(args.output_fn)
+        base_filename = os.path.basename(args.output_fn)
         datetime_prefix = datetime.datetime.now().strftime('%Y-%m-%d_')
         args.fn = os.path.join(base_dir, datetime_prefix + base_filename)
 
-    if input_data.startswith('http'):
+    if input_fn.startswith('http'):
         # c1: Single URL
-        urls = [input_data]
-    elif input_data.endswith('.txt'):
+        urls = [input_fn]
+    elif input_fn.endswith('.txt'):
         # c2: Text file with URLs
-        with open(input_data, 'r') as file:
+        with open(input_fn, 'r') as file:
             urls = [line.strip() for line in file if line.strip()]
-    elif input_data.endswith('.csv'):
+    elif input_fn.endswith('.csv'):
         # c3: CSV file with 'url' column
-        df = pd.read_csv(input_data)
+        df = pd.read_csv(input_fn)
         if 'url' not in df.columns:
             raise ValueError("CSV file must contain a 'url' column")
         urls = df['url'].tolist()

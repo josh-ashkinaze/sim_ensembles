@@ -13,6 +13,9 @@ This only scrapes the yearly page, meaning it will include a description but not
 Date: 2024-08-12 19:43:06
 
 Author: Joshua Ashkinaze
+
+Example: python3 ../src/scrape_list_ballotpedia.py --fn ../data/raw/ballot_issues.csv --add_dt
+
 """
 
 FIFTY_STATES = [
