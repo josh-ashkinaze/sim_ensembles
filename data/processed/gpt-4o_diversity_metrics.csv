@@ -1,201 +1,201 @@
-metric,mean,topic,agent_type,ideology,topic2,Agent Type
-TTR-1,0.1373040752351097,Abortion,default,conservative,Abortion,Non-Plurals
-HDD-1,0.7672968501001813,Abortion,default,conservative,Abortion,Non-Plurals
-TTR-2,0.4158227848101266,Abortion,default,conservative,Abortion,Non-Plurals
-HDD-2,0.9568251957767704,Abortion,default,conservative,Abortion,Non-Plurals
-TTR-3,0.6047923322683706,Abortion,default,conservative,Abortion,Non-Plurals
-HDD-3,0.9798147958104956,Abortion,default,conservative,Abortion,Non-Plurals
-TTR-4,0.7164516129032258,Abortion,default,conservative,Abortion,Non-Plurals
-HDD-4,0.9870279008511624,Abortion,default,conservative,Abortion,Non-Plurals
-TTR-5,0.7892508143322475,Abortion,default,conservative,Abortion,Non-Plurals
-HDD-5,0.9913543640373521,Abortion,default,conservative,Abortion,Non-Plurals
-TTR-1,0.11384615384615385,Abortion,default,liberal,Abortion,Non-Plurals
-HDD-1,0.7757449026734012,Abortion,default,liberal,Abortion,Non-Plurals
-TTR-2,0.3440993788819876,Abortion,default,liberal,Abortion,Non-Plurals
-HDD-2,0.9537666689921885,Abortion,default,liberal,Abortion,Non-Plurals
-TTR-3,0.5228840125391849,Abortion,default,liberal,Abortion,Non-Plurals
-HDD-3,0.9736342953759441,Abortion,default,liberal,Abortion,Non-Plurals
-TTR-4,0.644620253164557,Abortion,default,liberal,Abortion,Non-Plurals
-HDD-4,0.9826133482386086,Abortion,default,liberal,Abortion,Non-Plurals
-TTR-5,0.7319488817891374,Abortion,default,liberal,Abortion,Non-Plurals
-HDD-5,0.9879831567710724,Abortion,default,liberal,Abortion,Non-Plurals
-TTR-1,0.1514854717597127,Abortion,persona,conservative,Abortion,Plurals ANES Persona
-HDD-1,0.7951981638403657,Abortion,persona,conservative,Abortion,Plurals ANES Persona
-TTR-2,0.442466205077481,Abortion,persona,conservative,Abortion,Plurals ANES Persona
-HDD-2,0.9654339707262067,Abortion,persona,conservative,Abortion,Plurals ANES Persona
-TTR-3,0.6366966366966367,Abortion,persona,conservative,Abortion,Plurals ANES Persona
-HDD-3,0.985833680587689,Abortion,persona,conservative,Abortion,Plurals ANES Persona
-TTR-4,0.7595021863437605,Abortion,persona,conservative,Abortion,Plurals ANES Persona
-HDD-4,0.9925653640614738,Abortion,persona,conservative,Abortion,Plurals ANES Persona
-TTR-5,0.837580699966021,Abortion,persona,conservative,Abortion,Plurals ANES Persona
-HDD-5,0.9956572280951859,Abortion,persona,conservative,Abortion,Plurals ANES Persona
-TTR-1,0.13719711853307137,Abortion,persona,liberal,Abortion,Plurals ANES Persona
-HDD-1,0.7844854762588646,Abortion,persona,liberal,Abortion,Plurals ANES Persona
-TTR-2,0.41865079365079366,Abortion,persona,liberal,Abortion,Plurals ANES Persona
-HDD-2,0.9575413266781991,Abortion,persona,liberal,Abortion,Plurals ANES Persona
-TTR-3,0.5955243820975283,Abortion,persona,liberal,Abortion,Plurals ANES Persona
-HDD-3,0.9783984124738546,Abortion,persona,liberal,Abortion,Plurals ANES Persona
-TTR-4,0.701417004048583,Abortion,persona,liberal,Abortion,Plurals ANES Persona
-HDD-4,0.9875750435315391,Abortion,persona,liberal,Abortion,Plurals ANES Persona
-TTR-5,0.7767552828902522,Abortion,persona,liberal,Abortion,Plurals ANES Persona
-HDD-5,0.9919372352961291,Abortion,persona,liberal,Abortion,Plurals ANES Persona
-TTR-1,0.1271393643031785,Gay Marriage,default,conservative,Gay Marriage,Non-Plurals
-HDD-1,0.7767932170333659,Gay Marriage,default,conservative,Gay Marriage,Non-Plurals
-TTR-2,0.41178285009253546,Gay Marriage,default,conservative,Gay Marriage,Non-Plurals
-HDD-2,0.954791087314016,Gay Marriage,default,conservative,Gay Marriage,Non-Plurals
-TTR-3,0.5958904109589042,Gay Marriage,default,conservative,Gay Marriage,Non-Plurals
-HDD-3,0.9775863491877943,Gay Marriage,default,conservative,Gay Marriage,Non-Plurals
-TTR-4,0.7127592708988058,Gay Marriage,default,conservative,Gay Marriage,Non-Plurals
-HDD-4,0.98585390076163,Gay Marriage,default,conservative,Gay Marriage,Non-Plurals
-TTR-5,0.7915609137055838,Gay Marriage,default,conservative,Gay Marriage,Non-Plurals
-HDD-5,0.9910404193368809,Gay Marriage,default,conservative,Gay Marriage,Non-Plurals
-TTR-1,0.10505359877488514,Gay Marriage,default,liberal,Gay Marriage,Non-Plurals
-HDD-1,0.7480333235566061,Gay Marriage,default,liberal,Gay Marriage,Non-Plurals
-TTR-2,0.33075734157650694,Gay Marriage,default,liberal,Gay Marriage,Non-Plurals
-HDD-2,0.9394499573310565,Gay Marriage,default,liberal,Gay Marriage,Non-Plurals
-TTR-3,0.4995319812792512,Gay Marriage,default,liberal,Gay Marriage,Non-Plurals
-HDD-3,0.9646244066909847,Gay Marriage,default,liberal,Gay Marriage,Non-Plurals
-TTR-4,0.6047244094488189,Gay Marriage,default,liberal,Gay Marriage,Non-Plurals
-HDD-4,0.9737603622545172,Gay Marriage,default,liberal,Gay Marriage,Non-Plurals
-TTR-5,0.6845786963434022,Gay Marriage,default,liberal,Gay Marriage,Non-Plurals
-HDD-5,0.9795073262009826,Gay Marriage,default,liberal,Gay Marriage,Non-Plurals
-TTR-1,0.145203679369251,Gay Marriage,persona,conservative,Gay Marriage,Plurals ANES Persona
-HDD-1,0.793362617768147,Gay Marriage,persona,conservative,Gay Marriage,Plurals ANES Persona
-TTR-2,0.46051758460517583,Gay Marriage,persona,conservative,Gay Marriage,Plurals ANES Persona
-HDD-2,0.9638124358301617,Gay Marriage,persona,conservative,Gay Marriage,Plurals ANES Persona
-TTR-3,0.6484584450402144,Gay Marriage,persona,conservative,Gay Marriage,Plurals ANES Persona
-HDD-3,0.9821276590773992,Gay Marriage,persona,conservative,Gay Marriage,Plurals ANES Persona
-TTR-4,0.7566012186865267,Gay Marriage,persona,conservative,Gay Marriage,Plurals ANES Persona
-HDD-4,0.988171575669974,Gay Marriage,persona,conservative,Gay Marriage,Plurals ANES Persona
-TTR-5,0.8218194254445964,Gay Marriage,persona,conservative,Gay Marriage,Plurals ANES Persona
-HDD-5,0.9915110063841425,Gay Marriage,persona,conservative,Gay Marriage,Plurals ANES Persona
-TTR-1,0.1330188679245283,Gay Marriage,persona,liberal,Gay Marriage,Plurals ANES Persona
-HDD-1,0.7583651831410834,Gay Marriage,persona,liberal,Gay Marriage,Plurals ANES Persona
-TTR-2,0.38603174603174606,Gay Marriage,persona,liberal,Gay Marriage,Plurals ANES Persona
-HDD-2,0.9347582170576784,Gay Marriage,persona,liberal,Gay Marriage,Plurals ANES Persona
-TTR-3,0.5461538461538461,Gay Marriage,persona,liberal,Gay Marriage,Plurals ANES Persona
-HDD-3,0.9594561846565308,Gay Marriage,persona,liberal,Gay Marriage,Plurals ANES Persona
-TTR-4,0.643042071197411,Gay Marriage,persona,liberal,Gay Marriage,Plurals ANES Persona
-HDD-4,0.968344956447863,Gay Marriage,persona,liberal,Gay Marriage,Plurals ANES Persona
-TTR-5,0.704248366013072,Gay Marriage,persona,liberal,Gay Marriage,Plurals ANES Persona
-HDD-5,0.9746749650357158,Gay Marriage,persona,liberal,Gay Marriage,Plurals ANES Persona
-TTR-1,0.1366810774858663,Gun Control,default,conservative,Gun Control,Non-Plurals
-HDD-1,0.8104035588226081,Gun Control,default,conservative,Gun Control,Non-Plurals
-TTR-2,0.3745381256298287,Gun Control,default,conservative,Gun Control,Non-Plurals
-HDD-2,0.9412831286075016,Gun Control,default,conservative,Gun Control,Non-Plurals
-TTR-3,0.5337631489650492,Gun Control,default,conservative,Gun Control,Non-Plurals
-HDD-3,0.9608030253441232,Gun Control,default,conservative,Gun Control,Non-Plurals
-TTR-4,0.6324991429550908,Gun Control,default,conservative,Gun Control,Non-Plurals
-HDD-4,0.9692121807548495,Gun Control,default,conservative,Gun Control,Non-Plurals
-TTR-5,0.6962244544509871,Gun Control,default,conservative,Gun Control,Non-Plurals
-HDD-5,0.974184824950526,Gun Control,default,conservative,Gun Control,Non-Plurals
-TTR-1,0.12188006482982172,Gun Control,default,liberal,Gun Control,Non-Plurals
-HDD-1,0.7942703910117519,Gun Control,default,liberal,Gun Control,Non-Plurals
-TTR-2,0.3315875613747954,Gun Control,default,liberal,Gun Control,Non-Plurals
-HDD-2,0.9290171425638719,Gun Control,default,liberal,Gun Control,Non-Plurals
-TTR-3,0.46710743801652893,Gun Control,default,liberal,Gun Control,Non-Plurals
-HDD-3,0.9482438948747715,Gun Control,default,liberal,Gun Control,Non-Plurals
-TTR-4,0.5599332220367279,Gun Control,default,liberal,Gun Control,Non-Plurals
-HDD-4,0.9573763324122586,Gun Control,default,liberal,Gun Control,Non-Plurals
-TTR-5,0.6256323777403036,Gun Control,default,liberal,Gun Control,Non-Plurals
-HDD-5,0.9626963704841495,Gun Control,default,liberal,Gun Control,Non-Plurals
-TTR-1,0.15634415801807833,Gun Control,persona,conservative,Gun Control,Plurals ANES Persona
-HDD-1,0.8285548875286776,Gun Control,persona,conservative,Gun Control,Plurals ANES Persona
-TTR-2,0.46060196144741294,Gun Control,persona,conservative,Gun Control,Plurals ANES Persona
-HDD-2,0.9672635553277291,Gun Control,persona,conservative,Gun Control,Plurals ANES Persona
-TTR-3,0.640245985650837,Gun Control,persona,conservative,Gun Control,Plurals ANES Persona
-HDD-3,0.9844198732860981,Gun Control,persona,conservative,Gun Control,Plurals ANES Persona
-TTR-4,0.74283741801864,Gun Control,persona,conservative,Gun Control,Plurals ANES Persona
-HDD-4,0.9905695539259383,Gun Control,persona,conservative,Gun Control,Plurals ANES Persona
-TTR-5,0.807813044994768,Gun Control,persona,conservative,Gun Control,Plurals ANES Persona
-HDD-5,0.9937866893812184,Gun Control,persona,conservative,Gun Control,Plurals ANES Persona
-TTR-1,0.14895666131621188,Gun Control,persona,liberal,Gun Control,Plurals ANES Persona
-HDD-1,0.8262918641914649,Gun Control,persona,liberal,Gun Control,Plurals ANES Persona
-TTR-2,0.41750405186385736,Gun Control,persona,liberal,Gun Control,Plurals ANES Persona
-HDD-2,0.9574391964368476,Gun Control,persona,liberal,Gun Control,Plurals ANES Persona
-TTR-3,0.5901800327332242,Gun Control,persona,liberal,Gun Control,Plurals ANES Persona
-HDD-3,0.9751990294371036,Gun Control,persona,liberal,Gun Control,Plurals ANES Persona
-TTR-4,0.6968595041322314,Gun Control,persona,liberal,Gun Control,Plurals ANES Persona
-HDD-4,0.9829512056132873,Gun Control,persona,liberal,Gun Control,Plurals ANES Persona
-TTR-5,0.7676126878130217,Gun Control,persona,liberal,Gun Control,Plurals ANES Persona
-HDD-5,0.9872558751702715,Gun Control,persona,liberal,Gun Control,Plurals ANES Persona
+metric,mean,topic,agent_type,ideology,topic2,Agent Type,model
+TTR-1,0.1373040752351097,Abortion,default,conservative,Abortion,Non-Plurals,gpt-4o
+HDD-1,0.7672968501001818,Abortion,default,conservative,Abortion,Non-Plurals,gpt-4o
+TTR-2,0.4158227848101266,Abortion,default,conservative,Abortion,Non-Plurals,gpt-4o
+HDD-2,0.9568251957767706,Abortion,default,conservative,Abortion,Non-Plurals,gpt-4o
+TTR-3,0.6047923322683706,Abortion,default,conservative,Abortion,Non-Plurals,gpt-4o
+HDD-3,0.9798147958104981,Abortion,default,conservative,Abortion,Non-Plurals,gpt-4o
+TTR-4,0.7164516129032258,Abortion,default,conservative,Abortion,Non-Plurals,gpt-4o
+HDD-4,0.9870279008511594,Abortion,default,conservative,Abortion,Non-Plurals,gpt-4o
+TTR-5,0.7892508143322475,Abortion,default,conservative,Abortion,Non-Plurals,gpt-4o
+HDD-5,0.9913543640373529,Abortion,default,conservative,Abortion,Non-Plurals,gpt-4o
+TTR-1,0.11384615384615385,Abortion,default,liberal,Abortion,Non-Plurals,gpt-4o
+HDD-1,0.7757449026734009,Abortion,default,liberal,Abortion,Non-Plurals,gpt-4o
+TTR-2,0.3440993788819876,Abortion,default,liberal,Abortion,Non-Plurals,gpt-4o
+HDD-2,0.9537666689921891,Abortion,default,liberal,Abortion,Non-Plurals,gpt-4o
+TTR-3,0.5228840125391849,Abortion,default,liberal,Abortion,Non-Plurals,gpt-4o
+HDD-3,0.9736342953759431,Abortion,default,liberal,Abortion,Non-Plurals,gpt-4o
+TTR-4,0.644620253164557,Abortion,default,liberal,Abortion,Non-Plurals,gpt-4o
+HDD-4,0.9826133482386084,Abortion,default,liberal,Abortion,Non-Plurals,gpt-4o
+TTR-5,0.7319488817891374,Abortion,default,liberal,Abortion,Non-Plurals,gpt-4o
+HDD-5,0.9879831567710716,Abortion,default,liberal,Abortion,Non-Plurals,gpt-4o
+TTR-1,0.1514854717597127,Abortion,persona,conservative,Abortion,Plurals ANES Persona,gpt-4o
+HDD-1,0.7951981638403649,Abortion,persona,conservative,Abortion,Plurals ANES Persona,gpt-4o
+TTR-2,0.442466205077481,Abortion,persona,conservative,Abortion,Plurals ANES Persona,gpt-4o
+HDD-2,0.9654339707262088,Abortion,persona,conservative,Abortion,Plurals ANES Persona,gpt-4o
+TTR-3,0.6366966366966367,Abortion,persona,conservative,Abortion,Plurals ANES Persona,gpt-4o
+HDD-3,0.9858336805876867,Abortion,persona,conservative,Abortion,Plurals ANES Persona,gpt-4o
+TTR-4,0.7595021863437605,Abortion,persona,conservative,Abortion,Plurals ANES Persona,gpt-4o
+HDD-4,0.9925653640614709,Abortion,persona,conservative,Abortion,Plurals ANES Persona,gpt-4o
+TTR-5,0.837580699966021,Abortion,persona,conservative,Abortion,Plurals ANES Persona,gpt-4o
+HDD-5,0.9956572280951872,Abortion,persona,conservative,Abortion,Plurals ANES Persona,gpt-4o
+TTR-1,0.13719711853307137,Abortion,persona,liberal,Abortion,Plurals ANES Persona,gpt-4o
+HDD-1,0.7844854762588638,Abortion,persona,liberal,Abortion,Plurals ANES Persona,gpt-4o
+TTR-2,0.41865079365079366,Abortion,persona,liberal,Abortion,Plurals ANES Persona,gpt-4o
+HDD-2,0.9575413266781979,Abortion,persona,liberal,Abortion,Plurals ANES Persona,gpt-4o
+TTR-3,0.5955243820975283,Abortion,persona,liberal,Abortion,Plurals ANES Persona,gpt-4o
+HDD-3,0.9783984124738533,Abortion,persona,liberal,Abortion,Plurals ANES Persona,gpt-4o
+TTR-4,0.701417004048583,Abortion,persona,liberal,Abortion,Plurals ANES Persona,gpt-4o
+HDD-4,0.9875750435315388,Abortion,persona,liberal,Abortion,Plurals ANES Persona,gpt-4o
+TTR-5,0.7767552828902522,Abortion,persona,liberal,Abortion,Plurals ANES Persona,gpt-4o
+HDD-5,0.9919372352961286,Abortion,persona,liberal,Abortion,Plurals ANES Persona,gpt-4o
+TTR-1,0.1271393643031785,Gay Marriage,default,conservative,Gay Marriage,Non-Plurals,gpt-4o
+HDD-1,0.776793217033366,Gay Marriage,default,conservative,Gay Marriage,Non-Plurals,gpt-4o
+TTR-2,0.41178285009253546,Gay Marriage,default,conservative,Gay Marriage,Non-Plurals,gpt-4o
+HDD-2,0.9547910873140176,Gay Marriage,default,conservative,Gay Marriage,Non-Plurals,gpt-4o
+TTR-3,0.5958904109589042,Gay Marriage,default,conservative,Gay Marriage,Non-Plurals,gpt-4o
+HDD-3,0.9775863491877955,Gay Marriage,default,conservative,Gay Marriage,Non-Plurals,gpt-4o
+TTR-4,0.7127592708988058,Gay Marriage,default,conservative,Gay Marriage,Non-Plurals,gpt-4o
+HDD-4,0.9858539007616296,Gay Marriage,default,conservative,Gay Marriage,Non-Plurals,gpt-4o
+TTR-5,0.7915609137055838,Gay Marriage,default,conservative,Gay Marriage,Non-Plurals,gpt-4o
+HDD-5,0.9910404193368807,Gay Marriage,default,conservative,Gay Marriage,Non-Plurals,gpt-4o
+TTR-1,0.10505359877488514,Gay Marriage,default,liberal,Gay Marriage,Non-Plurals,gpt-4o
+HDD-1,0.7480333235566069,Gay Marriage,default,liberal,Gay Marriage,Non-Plurals,gpt-4o
+TTR-2,0.33075734157650694,Gay Marriage,default,liberal,Gay Marriage,Non-Plurals,gpt-4o
+HDD-2,0.9394499573310551,Gay Marriage,default,liberal,Gay Marriage,Non-Plurals,gpt-4o
+TTR-3,0.4995319812792512,Gay Marriage,default,liberal,Gay Marriage,Non-Plurals,gpt-4o
+HDD-3,0.9646244066909875,Gay Marriage,default,liberal,Gay Marriage,Non-Plurals,gpt-4o
+TTR-4,0.6047244094488189,Gay Marriage,default,liberal,Gay Marriage,Non-Plurals,gpt-4o
+HDD-4,0.9737603622545192,Gay Marriage,default,liberal,Gay Marriage,Non-Plurals,gpt-4o
+TTR-5,0.6845786963434022,Gay Marriage,default,liberal,Gay Marriage,Non-Plurals,gpt-4o
+HDD-5,0.9795073262009834,Gay Marriage,default,liberal,Gay Marriage,Non-Plurals,gpt-4o
+TTR-1,0.145203679369251,Gay Marriage,persona,conservative,Gay Marriage,Plurals ANES Persona,gpt-4o
+HDD-1,0.7933626177681471,Gay Marriage,persona,conservative,Gay Marriage,Plurals ANES Persona,gpt-4o
+TTR-2,0.46051758460517583,Gay Marriage,persona,conservative,Gay Marriage,Plurals ANES Persona,gpt-4o
+HDD-2,0.9638124358301616,Gay Marriage,persona,conservative,Gay Marriage,Plurals ANES Persona,gpt-4o
+TTR-3,0.6484584450402144,Gay Marriage,persona,conservative,Gay Marriage,Plurals ANES Persona,gpt-4o
+HDD-3,0.9821276590774001,Gay Marriage,persona,conservative,Gay Marriage,Plurals ANES Persona,gpt-4o
+TTR-4,0.7566012186865267,Gay Marriage,persona,conservative,Gay Marriage,Plurals ANES Persona,gpt-4o
+HDD-4,0.9881715756699735,Gay Marriage,persona,conservative,Gay Marriage,Plurals ANES Persona,gpt-4o
+TTR-5,0.8218194254445964,Gay Marriage,persona,conservative,Gay Marriage,Plurals ANES Persona,gpt-4o
+HDD-5,0.991511006384143,Gay Marriage,persona,conservative,Gay Marriage,Plurals ANES Persona,gpt-4o
+TTR-1,0.1330188679245283,Gay Marriage,persona,liberal,Gay Marriage,Plurals ANES Persona,gpt-4o
+HDD-1,0.758365183141083,Gay Marriage,persona,liberal,Gay Marriage,Plurals ANES Persona,gpt-4o
+TTR-2,0.38603174603174606,Gay Marriage,persona,liberal,Gay Marriage,Plurals ANES Persona,gpt-4o
+HDD-2,0.9347582170576741,Gay Marriage,persona,liberal,Gay Marriage,Plurals ANES Persona,gpt-4o
+TTR-3,0.5461538461538461,Gay Marriage,persona,liberal,Gay Marriage,Plurals ANES Persona,gpt-4o
+HDD-3,0.9594561846565315,Gay Marriage,persona,liberal,Gay Marriage,Plurals ANES Persona,gpt-4o
+TTR-4,0.643042071197411,Gay Marriage,persona,liberal,Gay Marriage,Plurals ANES Persona,gpt-4o
+HDD-4,0.9683449564478647,Gay Marriage,persona,liberal,Gay Marriage,Plurals ANES Persona,gpt-4o
+TTR-5,0.704248366013072,Gay Marriage,persona,liberal,Gay Marriage,Plurals ANES Persona,gpt-4o
+HDD-5,0.9746749650357166,Gay Marriage,persona,liberal,Gay Marriage,Plurals ANES Persona,gpt-4o
+TTR-1,0.1366810774858663,Gun Control,default,conservative,Gun Control,Non-Plurals,gpt-4o
+HDD-1,0.8104035588226085,Gun Control,default,conservative,Gun Control,Non-Plurals,gpt-4o
+TTR-2,0.3745381256298287,Gun Control,default,conservative,Gun Control,Non-Plurals,gpt-4o
+HDD-2,0.9412831286074973,Gun Control,default,conservative,Gun Control,Non-Plurals,gpt-4o
+TTR-3,0.5337631489650492,Gun Control,default,conservative,Gun Control,Non-Plurals,gpt-4o
+HDD-3,0.9608030253441234,Gun Control,default,conservative,Gun Control,Non-Plurals,gpt-4o
+TTR-4,0.6324991429550908,Gun Control,default,conservative,Gun Control,Non-Plurals,gpt-4o
+HDD-4,0.9692121807548494,Gun Control,default,conservative,Gun Control,Non-Plurals,gpt-4o
+TTR-5,0.6962244544509871,Gun Control,default,conservative,Gun Control,Non-Plurals,gpt-4o
+HDD-5,0.9741848249505235,Gun Control,default,conservative,Gun Control,Non-Plurals,gpt-4o
+TTR-1,0.12188006482982172,Gun Control,default,liberal,Gun Control,Non-Plurals,gpt-4o
+HDD-1,0.7942703910117509,Gun Control,default,liberal,Gun Control,Non-Plurals,gpt-4o
+TTR-2,0.3315875613747954,Gun Control,default,liberal,Gun Control,Non-Plurals,gpt-4o
+HDD-2,0.9290171425638694,Gun Control,default,liberal,Gun Control,Non-Plurals,gpt-4o
+TTR-3,0.46710743801652893,Gun Control,default,liberal,Gun Control,Non-Plurals,gpt-4o
+HDD-3,0.9482438948747713,Gun Control,default,liberal,Gun Control,Non-Plurals,gpt-4o
+TTR-4,0.5599332220367279,Gun Control,default,liberal,Gun Control,Non-Plurals,gpt-4o
+HDD-4,0.957376332412258,Gun Control,default,liberal,Gun Control,Non-Plurals,gpt-4o
+TTR-5,0.6256323777403036,Gun Control,default,liberal,Gun Control,Non-Plurals,gpt-4o
+HDD-5,0.9626963704841516,Gun Control,default,liberal,Gun Control,Non-Plurals,gpt-4o
+TTR-1,0.15634415801807833,Gun Control,persona,conservative,Gun Control,Plurals ANES Persona,gpt-4o
+HDD-1,0.828554887528678,Gun Control,persona,conservative,Gun Control,Plurals ANES Persona,gpt-4o
+TTR-2,0.46060196144741294,Gun Control,persona,conservative,Gun Control,Plurals ANES Persona,gpt-4o
+HDD-2,0.9672635553277318,Gun Control,persona,conservative,Gun Control,Plurals ANES Persona,gpt-4o
+TTR-3,0.640245985650837,Gun Control,persona,conservative,Gun Control,Plurals ANES Persona,gpt-4o
+HDD-3,0.984419873286099,Gun Control,persona,conservative,Gun Control,Plurals ANES Persona,gpt-4o
+TTR-4,0.74283741801864,Gun Control,persona,conservative,Gun Control,Plurals ANES Persona,gpt-4o
+HDD-4,0.9905695539259394,Gun Control,persona,conservative,Gun Control,Plurals ANES Persona,gpt-4o
+TTR-5,0.807813044994768,Gun Control,persona,conservative,Gun Control,Plurals ANES Persona,gpt-4o
+HDD-5,0.9937866893812195,Gun Control,persona,conservative,Gun Control,Plurals ANES Persona,gpt-4o
+TTR-1,0.14895666131621188,Gun Control,persona,liberal,Gun Control,Plurals ANES Persona,gpt-4o
+HDD-1,0.826291864191465,Gun Control,persona,liberal,Gun Control,Plurals ANES Persona,gpt-4o
+TTR-2,0.41750405186385736,Gun Control,persona,liberal,Gun Control,Plurals ANES Persona,gpt-4o
+HDD-2,0.9574391964368456,Gun Control,persona,liberal,Gun Control,Plurals ANES Persona,gpt-4o
+TTR-3,0.5901800327332242,Gun Control,persona,liberal,Gun Control,Plurals ANES Persona,gpt-4o
+HDD-3,0.9751990294371048,Gun Control,persona,liberal,Gun Control,Plurals ANES Persona,gpt-4o
+TTR-4,0.6968595041322314,Gun Control,persona,liberal,Gun Control,Plurals ANES Persona,gpt-4o
+HDD-4,0.9829512056132873,Gun Control,persona,liberal,Gun Control,Plurals ANES Persona,gpt-4o
+TTR-5,0.7676126878130217,Gun Control,persona,liberal,Gun Control,Plurals ANES Persona,gpt-4o
+HDD-5,0.9872558751702704,Gun Control,persona,liberal,Gun Control,Plurals ANES Persona,gpt-4o
 TTR-1,0.13573573573573575,LGBT Adoption Rights,default,conservative,"LGBT Adoption
-Rights",Non-Plurals
-HDD-1,0.7752348236882554,LGBT Adoption Rights,default,conservative,"LGBT Adoption
-Rights",Non-Plurals
+Rights",Non-Plurals,gpt-4o
+HDD-1,0.7752348236882551,LGBT Adoption Rights,default,conservative,"LGBT Adoption
+Rights",Non-Plurals,gpt-4o
 TTR-2,0.39181818181818184,LGBT Adoption Rights,default,conservative,"LGBT Adoption
-Rights",Non-Plurals
-HDD-2,0.9545314676654911,LGBT Adoption Rights,default,conservative,"LGBT Adoption
-Rights",Non-Plurals
+Rights",Non-Plurals,gpt-4o
+HDD-2,0.9545314676654897,LGBT Adoption Rights,default,conservative,"LGBT Adoption
+Rights",Non-Plurals,gpt-4o
 TTR-3,0.5688073394495413,LGBT Adoption Rights,default,conservative,"LGBT Adoption
-Rights",Non-Plurals
-HDD-3,0.9769629791208422,LGBT Adoption Rights,default,conservative,"LGBT Adoption
-Rights",Non-Plurals
+Rights",Non-Plurals,gpt-4o
+HDD-3,0.9769629791208424,LGBT Adoption Rights,default,conservative,"LGBT Adoption
+Rights",Non-Plurals,gpt-4o
 TTR-4,0.667283950617284,LGBT Adoption Rights,default,conservative,"LGBT Adoption
-Rights",Non-Plurals
-HDD-4,0.9835921028952596,LGBT Adoption Rights,default,conservative,"LGBT Adoption
-Rights",Non-Plurals
+Rights",Non-Plurals,gpt-4o
+HDD-4,0.9835921028952594,LGBT Adoption Rights,default,conservative,"LGBT Adoption
+Rights",Non-Plurals,gpt-4o
 TTR-5,0.7386292834890966,LGBT Adoption Rights,default,conservative,"LGBT Adoption
-Rights",Non-Plurals
-HDD-5,0.9873979437150462,LGBT Adoption Rights,default,conservative,"LGBT Adoption
-Rights",Non-Plurals
+Rights",Non-Plurals,gpt-4o
+HDD-5,0.9873979437150469,LGBT Adoption Rights,default,conservative,"LGBT Adoption
+Rights",Non-Plurals,gpt-4o
 TTR-1,0.10545236668663871,LGBT Adoption Rights,default,liberal,"LGBT Adoption
-Rights",Non-Plurals
-HDD-1,0.7589353176803723,LGBT Adoption Rights,default,liberal,"LGBT Adoption
-Rights",Non-Plurals
+Rights",Non-Plurals,gpt-4o
+HDD-1,0.7589353176803717,LGBT Adoption Rights,default,liberal,"LGBT Adoption
+Rights",Non-Plurals,gpt-4o
 TTR-2,0.2950423216444982,LGBT Adoption Rights,default,liberal,"LGBT Adoption
-Rights",Non-Plurals
-HDD-2,0.9272307858894634,LGBT Adoption Rights,default,liberal,"LGBT Adoption
-Rights",Non-Plurals
+Rights",Non-Plurals,gpt-4o
+HDD-2,0.9272307858894633,LGBT Adoption Rights,default,liberal,"LGBT Adoption
+Rights",Non-Plurals,gpt-4o
 TTR-3,0.4368517388651617,LGBT Adoption Rights,default,liberal,"LGBT Adoption
-Rights",Non-Plurals
-HDD-3,0.9567486014812513,LGBT Adoption Rights,default,liberal,"LGBT Adoption
-Rights",Non-Plurals
+Rights",Non-Plurals,gpt-4o
+HDD-3,0.9567486014812504,LGBT Adoption Rights,default,liberal,"LGBT Adoption
+Rights",Non-Plurals,gpt-4o
 TTR-4,0.5243226600985221,LGBT Adoption Rights,default,liberal,"LGBT Adoption
-Rights",Non-Plurals
-HDD-4,0.9653623683034892,LGBT Adoption Rights,default,liberal,"LGBT Adoption
-Rights",Non-Plurals
+Rights",Non-Plurals,gpt-4o
+HDD-4,0.9653623683034902,LGBT Adoption Rights,default,liberal,"LGBT Adoption
+Rights",Non-Plurals,gpt-4o
 TTR-5,0.598508390304537,LGBT Adoption Rights,default,liberal,"LGBT Adoption
-Rights",Non-Plurals
-HDD-5,0.9713931051841516,LGBT Adoption Rights,default,liberal,"LGBT Adoption
-Rights",Non-Plurals
+Rights",Non-Plurals,gpt-4o
+HDD-5,0.9713931051841505,LGBT Adoption Rights,default,liberal,"LGBT Adoption
+Rights",Non-Plurals,gpt-4o
 TTR-1,0.14836520666255398,LGBT Adoption Rights,persona,conservative,"LGBT Adoption
-Rights",Plurals ANES Persona
-HDD-1,0.7927081196583631,LGBT Adoption Rights,persona,conservative,"LGBT Adoption
-Rights",Plurals ANES Persona
+Rights",Plurals ANES Persona,gpt-4o
+HDD-1,0.7927081196583625,LGBT Adoption Rights,persona,conservative,"LGBT Adoption
+Rights",Plurals ANES Persona,gpt-4o
 TTR-2,0.4663760896637609,LGBT Adoption Rights,persona,conservative,"LGBT Adoption
-Rights",Plurals ANES Persona
-HDD-2,0.9673875850731262,LGBT Adoption Rights,persona,conservative,"LGBT Adoption
-Rights",Plurals ANES Persona
+Rights",Plurals ANES Persona,gpt-4o
+HDD-2,0.9673875850731248,LGBT Adoption Rights,persona,conservative,"LGBT Adoption
+Rights",Plurals ANES Persona,gpt-4o
 TTR-3,0.6841609050911377,LGBT Adoption Rights,persona,conservative,"LGBT Adoption
-Rights",Plurals ANES Persona
+Rights",Plurals ANES Persona,gpt-4o
 HDD-3,0.9867702742918745,LGBT Adoption Rights,persona,conservative,"LGBT Adoption
-Rights",Plurals ANES Persona
+Rights",Plurals ANES Persona,gpt-4o
 TTR-4,0.7934644670050761,LGBT Adoption Rights,persona,conservative,"LGBT Adoption
-Rights",Plurals ANES Persona
-HDD-4,0.9924304887936345,LGBT Adoption Rights,persona,conservative,"LGBT Adoption
-Rights",Plurals ANES Persona
+Rights",Plurals ANES Persona,gpt-4o
+HDD-4,0.9924304887936347,LGBT Adoption Rights,persona,conservative,"LGBT Adoption
+Rights",Plurals ANES Persona,gpt-4o
 TTR-5,0.8558616271620756,LGBT Adoption Rights,persona,conservative,"LGBT Adoption
-Rights",Plurals ANES Persona
+Rights",Plurals ANES Persona,gpt-4o
 HDD-5,0.9951214277760388,LGBT Adoption Rights,persona,conservative,"LGBT Adoption
-Rights",Plurals ANES Persona
+Rights",Plurals ANES Persona,gpt-4o
 TTR-1,0.1167927382753404,LGBT Adoption Rights,persona,liberal,"LGBT Adoption
-Rights",Plurals ANES Persona
-HDD-1,0.7753123271088441,LGBT Adoption Rights,persona,liberal,"LGBT Adoption
-Rights",Plurals ANES Persona
+Rights",Plurals ANES Persona,gpt-4o
+HDD-1,0.7753123271088443,LGBT Adoption Rights,persona,liberal,"LGBT Adoption
+Rights",Plurals ANES Persona,gpt-4o
 TTR-2,0.3615267175572519,LGBT Adoption Rights,persona,liberal,"LGBT Adoption
-Rights",Plurals ANES Persona
-HDD-2,0.9437683293010334,LGBT Adoption Rights,persona,liberal,"LGBT Adoption
-Rights",Plurals ANES Persona
+Rights",Plurals ANES Persona,gpt-4o
+HDD-2,0.9437683293010324,LGBT Adoption Rights,persona,liberal,"LGBT Adoption
+Rights",Plurals ANES Persona,gpt-4o
 TTR-3,0.5349768875192604,LGBT Adoption Rights,persona,liberal,"LGBT Adoption
-Rights",Plurals ANES Persona
-HDD-3,0.9683475893754916,LGBT Adoption Rights,persona,liberal,"LGBT Adoption
-Rights",Plurals ANES Persona
+Rights",Plurals ANES Persona,gpt-4o
+HDD-3,0.9683475893754925,LGBT Adoption Rights,persona,liberal,"LGBT Adoption
+Rights",Plurals ANES Persona,gpt-4o
 TTR-4,0.645412130637636,LGBT Adoption Rights,persona,liberal,"LGBT Adoption
-Rights",Plurals ANES Persona
-HDD-4,0.9758571225408612,LGBT Adoption Rights,persona,liberal,"LGBT Adoption
-Rights",Plurals ANES Persona
+Rights",Plurals ANES Persona,gpt-4o
+HDD-4,0.975857122540859,LGBT Adoption Rights,persona,liberal,"LGBT Adoption
+Rights",Plurals ANES Persona,gpt-4o
 TTR-5,0.7215070643642072,LGBT Adoption Rights,persona,liberal,"LGBT Adoption
-Rights",Plurals ANES Persona
+Rights",Plurals ANES Persona,gpt-4o
 HDD-5,0.9801467274796847,LGBT Adoption Rights,persona,liberal,"LGBT Adoption
-Rights",Plurals ANES Persona
+Rights",Plurals ANES Persona,gpt-4o

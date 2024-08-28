@@ -28,17 +28,18 @@ def pretty_print_prompts(df, prompt_col):
         print()
         print("="*20)
 
-def make_prompt(row):
+def make_prompt(row, n_words=150):
     """
     Returns a formatted prompt for a ballot issue.
 
     Args:
     - row (pd.Series): A row from the dataframe
+    - n_words (int): The number of words to limit the response to
 
     Returns:
     - str: The formatted prompt
     """
-    return f"DESCRIPTION\n{row['description']}\n\nVOTING\n-{row['yes_means']}\n\n-{row['no_means']}\n\nDETAILED OVERVIEW\n{row['overview']}"
+    return f"Argue for or against this ballot initiative.\n\nDESCRIPTION\n{row['description']}\n\nVOTING\n-{row['yes_means']}\n\n-{row['no_means']}\n\nDETAILED OVERVIEW\n{row['overview']}\n\nConstraints\nAnswer in {n_words} words."
 
 def flesch_kincaid(text):
     """
@@ -55,8 +56,11 @@ def flesch_kincaid(text):
 def clean_text(text):
     """
     Cleans up text
+    - Joins hyphenated words at line breaks
+    - Fixes U.S. formatting
     - Removes bracketed citations
-    - Fixes U. S. to U.S.
+    - Removes extra spaces and newlines
+    - Removes sentences containing "ballotpedia"
 
     Args:
     - text (str): The text to clean
@@ -64,9 +68,32 @@ def clean_text(text):
     Returns:
     - str: The cleaned text
     """
+
+    # join hyphenated words at line breaks
+    text = re.sub(r'(\w+)-\s*\n(\w+)', r'\1\2', text)
+
+    # fix U.S
     text = text.replace("U. S.", "U.S.")
-    text = re.sub(r'\[\d+\]', '', text) # try to remove the bracketed citations
-    return text
+
+    # Remove bracketed citations
+    text = re.sub(r'\[\d+\]', '', text)
+
+    # Remove extra spaces and newlines
+    text = re.sub(r'\s+', ' ', text)
+    text = re.sub(r'\n\s*\n', '\n\n', text)
+
+    # Split the text into sentences
+    sentences = re.split(r'(?<=[.!?])\s+', text)
+
+    # Check the last 3 sentences
+    for i in range(len(sentences)):
+        if "ballotpedia" in sentences[i].lower():
+            sentences[i] = ""  # Remove the sentence
+
+    # Join the sentences back together
+    text = " ".join(filter(None, sentences))
+
+    return text.strip()
 
 def sample_text(df, flesch_q, wc_q):
     """Helper function for sampling a text from the dataframe by quatiles of flesch and wc"""
@@ -98,7 +125,7 @@ def main():
     logging.info("Ballots with valid metadata: %d", len(ballots))
 
     # clean detailed ballots
-    detailed_ballots = pd.read_csv("../data/raw/2024-08-15_detailed_ballot_issues.csv")
+    detailed_ballots = pd.read_csv("../data/raw/2024-08-19_detailed_ballot_issues.csv")
     detailed_ballots = detailed_ballots.dropna(subset=['yes_means', 'no_means', 'overview'])
 
     merged = pd.merge(ballots, detailed_ballots, on='url', how='inner', suffixes=('', '_detailed'))
@@ -107,9 +134,10 @@ def main():
     merged['overview'] = merged['overview'].apply(clean_text)
     merged = process_dataframe(merged, 'overview')
     merged['prompt'] = merged.apply(make_prompt, axis=1)
+    merged = merged[~merged['overview'].str.contains("/1011927/BP_BTFWindow")]  # unparsable
     merged.to_csv('../data/processed/ballot_prompts.csv',)
 
-    sample = merged.sample(30, random_state=42)
+    sample = merged.sample(30, random_state=21)
     sample.to_csv('../data/processed/sample_ballot_prompts.csv')
     pretty_print_prompts(merged, 'prompt')
 
