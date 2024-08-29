@@ -1,0 +1,201 @@
+uid,condition,loop_merge_idx,unique_case_condition,unique_case,duration,age,gender,ideo,educ,commit,choice,clean_choice,correct,clean_condition
+R_1QS2X3JK4grmPCL,rational,5,5_rational,5,6.316666666666666,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_1QS2X3JK4grmPCL,rational,8,8_rational,8,6.316666666666666,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_1QS2X3JK4grmPCL,rational,9,9_rational,9,6.316666666666666,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_1QS2X3JK4grmPCL,rational,10,10_rational,10,6.316666666666666,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_1QS2X3JK4grmPCL,rational,11,11_rational,11,6.316666666666666,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_1QS2X3JK4grmPCL,rational,15,15_rational,15,6.316666666666666,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_1QS2X3JK4grmPCL,rational,18,18_rational,18,6.316666666666666,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_1QS2X3JK4grmPCL,rational,19,19_rational,19,6.316666666666666,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_1QS2X3JK4grmPCL,rational,23,23_rational,23,6.316666666666666,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_1QS2X3JK4grmPCL,rational,25,25_rational,25,6.316666666666666,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/4},emotional,False,Rational
+R_3efTipsHLDH8Z1S,rational,2,2_rational,2,4.766666666666667,25 to 34,Female,Very liberal,Postgraduate degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_3efTipsHLDH8Z1S,rational,6,6_rational,6,4.766666666666667,25 to 34,Female,Very liberal,Postgraduate degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_3efTipsHLDH8Z1S,rational,11,11_rational,11,4.766666666666667,25 to 34,Female,Very liberal,Postgraduate degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_3efTipsHLDH8Z1S,rational,15,15_rational,15,4.766666666666667,25 to 34,Female,Very liberal,Postgraduate degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_3efTipsHLDH8Z1S,rational,17,17_rational,17,4.766666666666667,25 to 34,Female,Very liberal,Postgraduate degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_3efTipsHLDH8Z1S,rational,18,18_rational,18,4.766666666666667,25 to 34,Female,Very liberal,Postgraduate degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_3efTipsHLDH8Z1S,rational,19,19_rational,19,4.766666666666667,25 to 34,Female,Very liberal,Postgraduate degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_3efTipsHLDH8Z1S,rational,25,25_rational,25,4.766666666666667,25 to 34,Female,Very liberal,Postgraduate degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_3efTipsHLDH8Z1S,rational,26,26_rational,26,4.766666666666667,25 to 34,Female,Very liberal,Postgraduate degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_3efTipsHLDH8Z1S,rational,30,30_rational,30,4.766666666666667,25 to 34,Female,Very liberal,Postgraduate degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_29fw49TK3pK9ip3,rational,3,3_rational,3,3.95,25 to 34,Male,Not sure,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_29fw49TK3pK9ip3,rational,8,8_rational,8,3.95,25 to 34,Male,Not sure,4-year college degree,"Yes, I will",${lm://Field/4},emotional,False,Rational
+R_29fw49TK3pK9ip3,rational,9,9_rational,9,3.95,25 to 34,Male,Not sure,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_29fw49TK3pK9ip3,rational,10,10_rational,10,3.95,25 to 34,Male,Not sure,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_29fw49TK3pK9ip3,rational,13,13_rational,13,3.95,25 to 34,Male,Not sure,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_29fw49TK3pK9ip3,rational,20,20_rational,20,3.95,25 to 34,Male,Not sure,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_29fw49TK3pK9ip3,rational,24,24_rational,24,3.95,25 to 34,Male,Not sure,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_29fw49TK3pK9ip3,rational,27,27_rational,27,3.95,25 to 34,Male,Not sure,4-year college degree,"Yes, I will",${lm://Field/4},emotional,False,Rational
+R_29fw49TK3pK9ip3,rational,29,29_rational,29,3.95,25 to 34,Male,Not sure,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_29fw49TK3pK9ip3,rational,30,30_rational,30,3.95,25 to 34,Male,Not sure,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_6qO6OjjUR06SRTO,rational,1,1_rational,1,3.1666666666666665,25 to 34,Male,Very liberal,"Some college, but no degree (yet)","Yes, I will",${lm://Field/3},rational,True,Rational
+R_6qO6OjjUR06SRTO,rational,3,3_rational,3,3.1666666666666665,25 to 34,Male,Very liberal,"Some college, but no degree (yet)","Yes, I will",${lm://Field/3},rational,True,Rational
+R_6qO6OjjUR06SRTO,rational,7,7_rational,7,3.1666666666666665,25 to 34,Male,Very liberal,"Some college, but no degree (yet)","Yes, I will",${lm://Field/3},rational,True,Rational
+R_6qO6OjjUR06SRTO,rational,8,8_rational,8,3.1666666666666665,25 to 34,Male,Very liberal,"Some college, but no degree (yet)","Yes, I will",${lm://Field/3},rational,True,Rational
+R_6qO6OjjUR06SRTO,rational,10,10_rational,10,3.1666666666666665,25 to 34,Male,Very liberal,"Some college, but no degree (yet)","Yes, I will",${lm://Field/3},rational,True,Rational
+R_6qO6OjjUR06SRTO,rational,12,12_rational,12,3.1666666666666665,25 to 34,Male,Very liberal,"Some college, but no degree (yet)","Yes, I will",${lm://Field/3},rational,True,Rational
+R_6qO6OjjUR06SRTO,rational,16,16_rational,16,3.1666666666666665,25 to 34,Male,Very liberal,"Some college, but no degree (yet)","Yes, I will",${lm://Field/3},rational,True,Rational
+R_6qO6OjjUR06SRTO,rational,21,21_rational,21,3.1666666666666665,25 to 34,Male,Very liberal,"Some college, but no degree (yet)","Yes, I will",${lm://Field/3},rational,True,Rational
+R_6qO6OjjUR06SRTO,rational,26,26_rational,26,3.1666666666666665,25 to 34,Male,Very liberal,"Some college, but no degree (yet)","Yes, I will",${lm://Field/3},rational,True,Rational
+R_6qO6OjjUR06SRTO,rational,28,28_rational,28,3.1666666666666665,25 to 34,Male,Very liberal,"Some college, but no degree (yet)","Yes, I will",${lm://Field/4},emotional,False,Rational
+R_7YhOxqPVSBc9Nsd,emotional,1,1_emotional,1,3.216666666666667,25 to 34,Female,Moderate,4-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_7YhOxqPVSBc9Nsd,emotional,3,3_emotional,3,3.216666666666667,25 to 34,Female,Moderate,4-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_7YhOxqPVSBc9Nsd,emotional,7,7_emotional,7,3.216666666666667,25 to 34,Female,Moderate,4-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_7YhOxqPVSBc9Nsd,emotional,12,12_emotional,12,3.216666666666667,25 to 34,Female,Moderate,4-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_7YhOxqPVSBc9Nsd,emotional,14,14_emotional,14,3.216666666666667,25 to 34,Female,Moderate,4-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_7YhOxqPVSBc9Nsd,emotional,15,15_emotional,15,3.216666666666667,25 to 34,Female,Moderate,4-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_7YhOxqPVSBc9Nsd,emotional,17,17_emotional,17,3.216666666666667,25 to 34,Female,Moderate,4-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_7YhOxqPVSBc9Nsd,emotional,22,22_emotional,22,3.216666666666667,25 to 34,Female,Moderate,4-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_7YhOxqPVSBc9Nsd,emotional,26,26_emotional,26,3.216666666666667,25 to 34,Female,Moderate,4-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_7YhOxqPVSBc9Nsd,emotional,27,27_emotional,27,3.216666666666667,25 to 34,Female,Moderate,4-year college degree,"Yes, I will",${lm://Field/3},rational,False,Emotional
+R_3Iag62DIZMXxXaF,emotional,2,2_emotional,2,6.066666666666666,35 to 44,Female,Conservative,"Some college, but no degree (yet)","Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_3Iag62DIZMXxXaF,emotional,3,3_emotional,3,6.066666666666666,35 to 44,Female,Conservative,"Some college, but no degree (yet)","Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_3Iag62DIZMXxXaF,emotional,6,6_emotional,6,6.066666666666666,35 to 44,Female,Conservative,"Some college, but no degree (yet)","Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_3Iag62DIZMXxXaF,emotional,9,9_emotional,9,6.066666666666666,35 to 44,Female,Conservative,"Some college, but no degree (yet)","Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_3Iag62DIZMXxXaF,emotional,13,13_emotional,13,6.066666666666666,35 to 44,Female,Conservative,"Some college, but no degree (yet)","Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_3Iag62DIZMXxXaF,emotional,14,14_emotional,14,6.066666666666666,35 to 44,Female,Conservative,"Some college, but no degree (yet)","Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_3Iag62DIZMXxXaF,emotional,20,20_emotional,20,6.066666666666666,35 to 44,Female,Conservative,"Some college, but no degree (yet)","Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_3Iag62DIZMXxXaF,emotional,24,24_emotional,24,6.066666666666666,35 to 44,Female,Conservative,"Some college, but no degree (yet)","Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_3Iag62DIZMXxXaF,emotional,26,26_emotional,26,6.066666666666666,35 to 44,Female,Conservative,"Some college, but no degree (yet)","Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_3Iag62DIZMXxXaF,emotional,30,30_emotional,30,6.066666666666666,35 to 44,Female,Conservative,"Some college, but no degree (yet)","Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_5OvFMvvV3RCVlsS,emotional,1,1_emotional,1,7.283333333333333,25 to 34,Female,Moderate,2-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_5OvFMvvV3RCVlsS,emotional,3,3_emotional,3,7.283333333333333,25 to 34,Female,Moderate,2-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_5OvFMvvV3RCVlsS,emotional,7,7_emotional,7,7.283333333333333,25 to 34,Female,Moderate,2-year college degree,"Yes, I will",${lm://Field/3},rational,False,Emotional
+R_5OvFMvvV3RCVlsS,emotional,15,15_emotional,15,7.283333333333333,25 to 34,Female,Moderate,2-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_5OvFMvvV3RCVlsS,emotional,18,18_emotional,18,7.283333333333333,25 to 34,Female,Moderate,2-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_5OvFMvvV3RCVlsS,emotional,20,20_emotional,20,7.283333333333333,25 to 34,Female,Moderate,2-year college degree,"Yes, I will",${lm://Field/3},rational,False,Emotional
+R_5OvFMvvV3RCVlsS,emotional,22,22_emotional,22,7.283333333333333,25 to 34,Female,Moderate,2-year college degree,"Yes, I will",${lm://Field/3},rational,False,Emotional
+R_5OvFMvvV3RCVlsS,emotional,23,23_emotional,23,7.283333333333333,25 to 34,Female,Moderate,2-year college degree,"Yes, I will",${lm://Field/3},rational,False,Emotional
+R_5OvFMvvV3RCVlsS,emotional,25,25_emotional,25,7.283333333333333,25 to 34,Female,Moderate,2-year college degree,"Yes, I will",${lm://Field/3},rational,False,Emotional
+R_5OvFMvvV3RCVlsS,emotional,29,29_emotional,29,7.283333333333333,25 to 34,Female,Moderate,2-year college degree,"Yes, I will",${lm://Field/3},rational,False,Emotional
+R_5p9mG2FF3NowBS0,rational,3,3_rational,3,5.55,45 to 54,Female,Very liberal,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_5p9mG2FF3NowBS0,rational,7,7_rational,7,5.55,45 to 54,Female,Very liberal,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_5p9mG2FF3NowBS0,rational,10,10_rational,10,5.55,45 to 54,Female,Very liberal,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_5p9mG2FF3NowBS0,rational,11,11_rational,11,5.55,45 to 54,Female,Very liberal,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_5p9mG2FF3NowBS0,rational,12,12_rational,12,5.55,45 to 54,Female,Very liberal,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_5p9mG2FF3NowBS0,rational,13,13_rational,13,5.55,45 to 54,Female,Very liberal,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_5p9mG2FF3NowBS0,rational,17,17_rational,17,5.55,45 to 54,Female,Very liberal,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_5p9mG2FF3NowBS0,rational,22,22_rational,22,5.55,45 to 54,Female,Very liberal,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_5p9mG2FF3NowBS0,rational,23,23_rational,23,5.55,45 to 54,Female,Very liberal,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_5p9mG2FF3NowBS0,rational,29,29_rational,29,5.55,45 to 54,Female,Very liberal,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_6riJizxUU1tbN4j,emotional,1,1_emotional,1,5.1,25 to 34,Female,Conservative,2-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_6riJizxUU1tbN4j,emotional,2,2_emotional,2,5.1,25 to 34,Female,Conservative,2-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_6riJizxUU1tbN4j,emotional,3,3_emotional,3,5.1,25 to 34,Female,Conservative,2-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_6riJizxUU1tbN4j,emotional,4,4_emotional,4,5.1,25 to 34,Female,Conservative,2-year college degree,"Yes, I will",${lm://Field/3},rational,False,Emotional
+R_6riJizxUU1tbN4j,emotional,7,7_emotional,7,5.1,25 to 34,Female,Conservative,2-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_6riJizxUU1tbN4j,emotional,13,13_emotional,13,5.1,25 to 34,Female,Conservative,2-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_6riJizxUU1tbN4j,emotional,17,17_emotional,17,5.1,25 to 34,Female,Conservative,2-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_6riJizxUU1tbN4j,emotional,18,18_emotional,18,5.1,25 to 34,Female,Conservative,2-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_6riJizxUU1tbN4j,emotional,20,20_emotional,20,5.1,25 to 34,Female,Conservative,2-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_6riJizxUU1tbN4j,emotional,21,21_emotional,21,5.1,25 to 34,Female,Conservative,2-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_7ZIJdXjo5UFkthH,emotional,5,5_emotional,5,15.0,35 to 44,Male,Moderate,4-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_7ZIJdXjo5UFkthH,emotional,6,6_emotional,6,15.0,35 to 44,Male,Moderate,4-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_7ZIJdXjo5UFkthH,emotional,15,15_emotional,15,15.0,35 to 44,Male,Moderate,4-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_7ZIJdXjo5UFkthH,emotional,16,16_emotional,16,15.0,35 to 44,Male,Moderate,4-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_7ZIJdXjo5UFkthH,emotional,17,17_emotional,17,15.0,35 to 44,Male,Moderate,4-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_7ZIJdXjo5UFkthH,emotional,21,21_emotional,21,15.0,35 to 44,Male,Moderate,4-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_7ZIJdXjo5UFkthH,emotional,25,25_emotional,25,15.0,35 to 44,Male,Moderate,4-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_7ZIJdXjo5UFkthH,emotional,26,26_emotional,26,15.0,35 to 44,Male,Moderate,4-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_7ZIJdXjo5UFkthH,emotional,28,28_emotional,28,15.0,35 to 44,Male,Moderate,4-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_7ZIJdXjo5UFkthH,emotional,30,30_emotional,30,15.0,35 to 44,Male,Moderate,4-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_7p97FOHS1ZD3ARP,rational,3,3_rational,3,6.716666666666667,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_7p97FOHS1ZD3ARP,rational,8,8_rational,8,6.716666666666667,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_7p97FOHS1ZD3ARP,rational,9,9_rational,9,6.716666666666667,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_7p97FOHS1ZD3ARP,rational,11,11_rational,11,6.716666666666667,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_7p97FOHS1ZD3ARP,rational,18,18_rational,18,6.716666666666667,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_7p97FOHS1ZD3ARP,rational,19,19_rational,19,6.716666666666667,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_7p97FOHS1ZD3ARP,rational,21,21_rational,21,6.716666666666667,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_7p97FOHS1ZD3ARP,rational,24,24_rational,24,6.716666666666667,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_7p97FOHS1ZD3ARP,rational,26,26_rational,26,6.716666666666667,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_7p97FOHS1ZD3ARP,rational,27,27_rational,27,6.716666666666667,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/4},emotional,False,Rational
+R_3CPEl2lGz0wBurW,emotional,1,1_emotional,1,6.916666666666667,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_3CPEl2lGz0wBurW,emotional,3,3_emotional,3,6.916666666666667,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_3CPEl2lGz0wBurW,emotional,6,6_emotional,6,6.916666666666667,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_3CPEl2lGz0wBurW,emotional,9,9_emotional,9,6.916666666666667,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_3CPEl2lGz0wBurW,emotional,10,10_emotional,10,6.916666666666667,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_3CPEl2lGz0wBurW,emotional,17,17_emotional,17,6.916666666666667,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_3CPEl2lGz0wBurW,emotional,20,20_emotional,20,6.916666666666667,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_3CPEl2lGz0wBurW,emotional,22,22_emotional,22,6.916666666666667,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_3CPEl2lGz0wBurW,emotional,24,24_emotional,24,6.916666666666667,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_3CPEl2lGz0wBurW,emotional,30,30_emotional,30,6.916666666666667,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_7EtEHLd42CzJiqQ,emotional,2,2_emotional,2,10.733333333333333,25 to 34,Female,Moderate,2-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_7EtEHLd42CzJiqQ,emotional,5,5_emotional,5,10.733333333333333,25 to 34,Female,Moderate,2-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_7EtEHLd42CzJiqQ,emotional,7,7_emotional,7,10.733333333333333,25 to 34,Female,Moderate,2-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_7EtEHLd42CzJiqQ,emotional,13,13_emotional,13,10.733333333333333,25 to 34,Female,Moderate,2-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_7EtEHLd42CzJiqQ,emotional,15,15_emotional,15,10.733333333333333,25 to 34,Female,Moderate,2-year college degree,"Yes, I will",${lm://Field/3},rational,False,Emotional
+R_7EtEHLd42CzJiqQ,emotional,16,16_emotional,16,10.733333333333333,25 to 34,Female,Moderate,2-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_7EtEHLd42CzJiqQ,emotional,23,23_emotional,23,10.733333333333333,25 to 34,Female,Moderate,2-year college degree,"Yes, I will",${lm://Field/3},rational,False,Emotional
+R_7EtEHLd42CzJiqQ,emotional,24,24_emotional,24,10.733333333333333,25 to 34,Female,Moderate,2-year college degree,"Yes, I will",${lm://Field/3},rational,False,Emotional
+R_7EtEHLd42CzJiqQ,emotional,27,27_emotional,27,10.733333333333333,25 to 34,Female,Moderate,2-year college degree,"Yes, I will",${lm://Field/3},rational,False,Emotional
+R_7EtEHLd42CzJiqQ,emotional,30,30_emotional,30,10.733333333333333,25 to 34,Female,Moderate,2-year college degree,"Yes, I will",${lm://Field/3},rational,False,Emotional
+R_6SIE3IdiAHDpOhi,rational,4,4_rational,4,7.95,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_6SIE3IdiAHDpOhi,rational,6,6_rational,6,7.95,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_6SIE3IdiAHDpOhi,rational,7,7_rational,7,7.95,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_6SIE3IdiAHDpOhi,rational,8,8_rational,8,7.95,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_6SIE3IdiAHDpOhi,rational,10,10_rational,10,7.95,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_6SIE3IdiAHDpOhi,rational,18,18_rational,18,7.95,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_6SIE3IdiAHDpOhi,rational,21,21_rational,21,7.95,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_6SIE3IdiAHDpOhi,rational,22,22_rational,22,7.95,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_6SIE3IdiAHDpOhi,rational,27,27_rational,27,7.95,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_6SIE3IdiAHDpOhi,rational,30,30_rational,30,7.95,25 to 34,Female,Liberal,4-year college degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_3ia5yfORaXEcbNY,emotional,2,2_emotional,2,8.933333333333334,25 to 34,Female,Not sure,2-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_3ia5yfORaXEcbNY,emotional,8,8_emotional,8,8.933333333333334,25 to 34,Female,Not sure,2-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_3ia5yfORaXEcbNY,emotional,12,12_emotional,12,8.933333333333334,25 to 34,Female,Not sure,2-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_3ia5yfORaXEcbNY,emotional,14,14_emotional,14,8.933333333333334,25 to 34,Female,Not sure,2-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_3ia5yfORaXEcbNY,emotional,18,18_emotional,18,8.933333333333334,25 to 34,Female,Not sure,2-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_3ia5yfORaXEcbNY,emotional,19,19_emotional,19,8.933333333333334,25 to 34,Female,Not sure,2-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_3ia5yfORaXEcbNY,emotional,21,21_emotional,21,8.933333333333334,25 to 34,Female,Not sure,2-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_3ia5yfORaXEcbNY,emotional,25,25_emotional,25,8.933333333333334,25 to 34,Female,Not sure,2-year college degree,"Yes, I will",${lm://Field/3},rational,False,Emotional
+R_3ia5yfORaXEcbNY,emotional,26,26_emotional,26,8.933333333333334,25 to 34,Female,Not sure,2-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_3ia5yfORaXEcbNY,emotional,30,30_emotional,30,8.933333333333334,25 to 34,Female,Not sure,2-year college degree,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_3QaVzHRcgllFiNS,rational,6,6_rational,6,10.766666666666667,45 to 54,Male,Conservative,Postgraduate degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_3QaVzHRcgllFiNS,rational,7,7_rational,7,10.766666666666667,45 to 54,Male,Conservative,Postgraduate degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_3QaVzHRcgllFiNS,rational,11,11_rational,11,10.766666666666667,45 to 54,Male,Conservative,Postgraduate degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_3QaVzHRcgllFiNS,rational,14,14_rational,14,10.766666666666667,45 to 54,Male,Conservative,Postgraduate degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_3QaVzHRcgllFiNS,rational,17,17_rational,17,10.766666666666667,45 to 54,Male,Conservative,Postgraduate degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_3QaVzHRcgllFiNS,rational,18,18_rational,18,10.766666666666667,45 to 54,Male,Conservative,Postgraduate degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_3QaVzHRcgllFiNS,rational,20,20_rational,20,10.766666666666667,45 to 54,Male,Conservative,Postgraduate degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_3QaVzHRcgllFiNS,rational,23,23_rational,23,10.766666666666667,45 to 54,Male,Conservative,Postgraduate degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_3QaVzHRcgllFiNS,rational,25,25_rational,25,10.766666666666667,45 to 54,Male,Conservative,Postgraduate degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_3QaVzHRcgllFiNS,rational,29,29_rational,29,10.766666666666667,45 to 54,Male,Conservative,Postgraduate degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_6ELPzCsyzN92vMR,rational,5,5_rational,5,9.733333333333333,35 to 44,Male,Moderate,High school graduate,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_6ELPzCsyzN92vMR,rational,6,6_rational,6,9.733333333333333,35 to 44,Male,Moderate,High school graduate,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_6ELPzCsyzN92vMR,rational,10,10_rational,10,9.733333333333333,35 to 44,Male,Moderate,High school graduate,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_6ELPzCsyzN92vMR,rational,11,11_rational,11,9.733333333333333,35 to 44,Male,Moderate,High school graduate,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_6ELPzCsyzN92vMR,rational,12,12_rational,12,9.733333333333333,35 to 44,Male,Moderate,High school graduate,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_6ELPzCsyzN92vMR,rational,17,17_rational,17,9.733333333333333,35 to 44,Male,Moderate,High school graduate,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_6ELPzCsyzN92vMR,rational,19,19_rational,19,9.733333333333333,35 to 44,Male,Moderate,High school graduate,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_6ELPzCsyzN92vMR,rational,23,23_rational,23,9.733333333333333,35 to 44,Male,Moderate,High school graduate,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_6ELPzCsyzN92vMR,rational,26,26_rational,26,9.733333333333333,35 to 44,Male,Moderate,High school graduate,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_6ELPzCsyzN92vMR,rational,29,29_rational,29,9.733333333333333,35 to 44,Male,Moderate,High school graduate,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_3eOSfBS8X782AVe,rational,1,1_rational,1,11.183333333333334,25 to 34,Male,Moderate,"Some college, but no degree (yet)","Yes, I will",${lm://Field/3},rational,True,Rational
+R_3eOSfBS8X782AVe,rational,4,4_rational,4,11.183333333333334,25 to 34,Male,Moderate,"Some college, but no degree (yet)","Yes, I will",${lm://Field/3},rational,True,Rational
+R_3eOSfBS8X782AVe,rational,13,13_rational,13,11.183333333333334,25 to 34,Male,Moderate,"Some college, but no degree (yet)","Yes, I will",${lm://Field/4},emotional,False,Rational
+R_3eOSfBS8X782AVe,rational,17,17_rational,17,11.183333333333334,25 to 34,Male,Moderate,"Some college, but no degree (yet)","Yes, I will",${lm://Field/4},emotional,False,Rational
+R_3eOSfBS8X782AVe,rational,20,20_rational,20,11.183333333333334,25 to 34,Male,Moderate,"Some college, but no degree (yet)","Yes, I will",${lm://Field/4},emotional,False,Rational
+R_3eOSfBS8X782AVe,rational,21,21_rational,21,11.183333333333334,25 to 34,Male,Moderate,"Some college, but no degree (yet)","Yes, I will",${lm://Field/3},rational,True,Rational
+R_3eOSfBS8X782AVe,rational,22,22_rational,22,11.183333333333334,25 to 34,Male,Moderate,"Some college, but no degree (yet)","Yes, I will",${lm://Field/3},rational,True,Rational
+R_3eOSfBS8X782AVe,rational,26,26_rational,26,11.183333333333334,25 to 34,Male,Moderate,"Some college, but no degree (yet)","Yes, I will",${lm://Field/3},rational,True,Rational
+R_3eOSfBS8X782AVe,rational,28,28_rational,28,11.183333333333334,25 to 34,Male,Moderate,"Some college, but no degree (yet)","Yes, I will",${lm://Field/3},rational,True,Rational
+R_3eOSfBS8X782AVe,rational,29,29_rational,29,11.183333333333334,25 to 34,Male,Moderate,"Some college, but no degree (yet)","Yes, I will",${lm://Field/3},rational,True,Rational
+R_6KQ7ZF56719iUPj,rational,7,7_rational,7,12.783333333333333,35 to 44,Male,Very liberal,Postgraduate degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_6KQ7ZF56719iUPj,rational,8,8_rational,8,12.783333333333333,35 to 44,Male,Very liberal,Postgraduate degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_6KQ7ZF56719iUPj,rational,9,9_rational,9,12.783333333333333,35 to 44,Male,Very liberal,Postgraduate degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_6KQ7ZF56719iUPj,rational,11,11_rational,11,12.783333333333333,35 to 44,Male,Very liberal,Postgraduate degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_6KQ7ZF56719iUPj,rational,16,16_rational,16,12.783333333333333,35 to 44,Male,Very liberal,Postgraduate degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_6KQ7ZF56719iUPj,rational,20,20_rational,20,12.783333333333333,35 to 44,Male,Very liberal,Postgraduate degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_6KQ7ZF56719iUPj,rational,21,21_rational,21,12.783333333333333,35 to 44,Male,Very liberal,Postgraduate degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_6KQ7ZF56719iUPj,rational,22,22_rational,22,12.783333333333333,35 to 44,Male,Very liberal,Postgraduate degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_6KQ7ZF56719iUPj,rational,24,24_rational,24,12.783333333333333,35 to 44,Male,Very liberal,Postgraduate degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_6KQ7ZF56719iUPj,rational,27,27_rational,27,12.783333333333333,35 to 44,Male,Very liberal,Postgraduate degree,"Yes, I will",${lm://Field/3},rational,True,Rational
+R_87EJ6d1n2zql7k5,emotional,2,2_emotional,2,15.1,25 to 34,Female,Not sure,High school graduate,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_87EJ6d1n2zql7k5,emotional,4,4_emotional,4,15.1,25 to 34,Female,Not sure,High school graduate,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_87EJ6d1n2zql7k5,emotional,7,7_emotional,7,15.1,25 to 34,Female,Not sure,High school graduate,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_87EJ6d1n2zql7k5,emotional,11,11_emotional,11,15.1,25 to 34,Female,Not sure,High school graduate,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_87EJ6d1n2zql7k5,emotional,14,14_emotional,14,15.1,25 to 34,Female,Not sure,High school graduate,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_87EJ6d1n2zql7k5,emotional,15,15_emotional,15,15.1,25 to 34,Female,Not sure,High school graduate,"Yes, I will",${lm://Field/3},rational,False,Emotional
+R_87EJ6d1n2zql7k5,emotional,16,16_emotional,16,15.1,25 to 34,Female,Not sure,High school graduate,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_87EJ6d1n2zql7k5,emotional,23,23_emotional,23,15.1,25 to 34,Female,Not sure,High school graduate,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_87EJ6d1n2zql7k5,emotional,24,24_emotional,24,15.1,25 to 34,Female,Not sure,High school graduate,"Yes, I will",${lm://Field/4},emotional,True,Emotional
+R_87EJ6d1n2zql7k5,emotional,28,28_emotional,28,15.1,25 to 34,Female,Not sure,High school graduate,"Yes, I will",${lm://Field/4},emotional,True,Emotional
