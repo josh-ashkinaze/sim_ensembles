@@ -37,6 +37,8 @@ def clean_text(text):
 
     text = unicodedata.normalize('NFKC', text)
 
+    text = html.escape(text, quote=False)
+
     replacements = {
         '—': '&mdash;',  # em dash
         '–': '&ndash;',  # en dash
@@ -69,23 +71,21 @@ def strip_response_string(response):
 
 def main():
     N = 15
-    N_WORDS = 50
     MODEL = 'gpt-4o'
 
     data_pts = []
-    structure_data = []
-    for i in tqdm(range(N)):
+    for i in tqdm(range(N), desc="Processing prompts"):
 
         # Focus group task and participants
         ############################
-        focus_group_task = f"What specific product details for a solar panel company would resonate with you personally? Be very specific; you are in a focus group. Answer in 20 words."
+        focus_group_task = "What specific product details for a solar panel company would resonate with you personally? Be very specific; you are in a focus group. Answer in 20 words."
         focus_group_participants = [Agent(model=MODEL, task=focus_group_task, ideology='conservative') for _ in
                                     range(10)]
 
         moderator = Moderator(model=MODEL,
                               system_instructions="You are an expert copywriter for an ad agency.",
                               task="You are overseeing a focus group discussing what products would resonate with them for the solar panel category.",
-                              combination_instructions=f"Here are focus group responses: \n<start>${{previous_responses}}<end>. Now based on the specifics of these responses, come up with a specific product for a solar panel company that would resonate with the focus group members. Be very specific. Answer in {N_WORDS} words only.")
+                              combination_instructions=f"Here are focus group responses: \n<start>${{previous_responses}}<end>. Now based on the specifics of these responses, come up with a specific product for a solar panel company that would resonate with the focus group members. Be very specific. Answer in 50 words only.")
 
         ensemble = Ensemble(agents=focus_group_participants, moderator=moderator)
         ensemble.process()
@@ -96,7 +96,7 @@ def main():
 
         # Default
         ############################
-        zero_shot_task = f"Come up with a specific product for a solar panel company that would resonate with conservatives. Be very specific. Answer in {N_WORDS} words only."
+        zero_shot_task = "Come up with a specific product for a solar panel company that would resonate with conservatives. Be very specific. Answer in 50 words only."
         zero_shot = Agent(model=MODEL,
                         system_instructions="You are an expert copywriter for an ad agency.",
                         task=zero_shot_task)
@@ -104,19 +104,15 @@ def main():
 
         data_pt = {'focus_group_final': ensemble_response, 'zero_shot': zero_shot_response, 'idx': i + 1,
                    'focus_group_all': ensemble.responses}
-        structure_info = ensemble.info
-        structure_info.update({'idx':i+1})
         data_pts.append(data_pt)
-        structure_data.append(structure_info)
         ############################
 
     df = pd.DataFrame(data_pts)
     df['clean_focus_group_final'] = df['focus_group_final'].apply(clean_text)
     df['clean_zero'] = df['zero_shot'].apply(clean_text)
-    df.drop(columns=['focus_group_all']).to_csv(f"../data/raw/solar_panels_conservatives_gpt-4o_script_{N_WORDS}.csv", index=False)
 
-    structure_df = pd.DataFrame(structure_data)
-    structure_df.to_json(f"../data/raw/solar_panels_conservatives_gpt-4o_script_{N_WORDS}_structure.jsonl", orient='records', lines=True)
+    df.to_json("../data/raw/solar_panels_conservatives.jsonl", orient='records', lines=True)
+    df.drop(columns=['focus_group_all']).to_csv("../data/raw/solar_panels_conservatives.csv", index=False)
 
     print("Data processing complete.")
 
