@@ -8,10 +8,17 @@ import pandas as pd
 
 
 def clean_choice(x):
-    """Clean choice"""
-    if "Field/1" in x:
-        return "Simulated Focus Group\n(Moderated Ensemble)"
-    elif "Field/2" in x:
+    """
+    Clean choice column.
+
+    NOTE:
+        - For the charter school data, field 2 is the focus group and field 1 is zero shot.
+        - Order is always randomized when displayed to participants anyway though
+
+    """
+    if "Field/2" in x:
+        return "Simulated Focus Group\n(Directed Acyclic Graph)"
+    elif "Field/1" in x:
         return "Zero Shot"
     else:
         raise ValueError
