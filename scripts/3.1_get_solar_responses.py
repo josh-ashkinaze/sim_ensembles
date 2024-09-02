@@ -32,15 +32,13 @@ def pretty_print_df(df):
 
 
 def clean_text(text):
-
     text = strip_response_string(text)
 
     text = unicodedata.normalize('NFKC', text)
 
     text = html.escape(text, quote=False)
 
-    replacements = {
-        '—': '&mdash;',  # em dash
+    replacements = {'—': '&mdash;',  # em dash
         '–': '&ndash;',  # en dash
         '"': '&ldquo;',  # left double quotation mark
         '"': '&rdquo;',  # right double quotation mark
@@ -75,15 +73,13 @@ def main():
 
     data_pts = []
     for i in tqdm(range(N), desc="Processing prompts"):
-
         # Focus group task and participants
         ############################
         focus_group_task = "What specific product details for a solar panel company would resonate with you personally? Be very specific; you are in a focus group. Answer in 20 words."
         focus_group_participants = [Agent(model=MODEL, task=focus_group_task, ideology='conservative') for _ in
                                     range(10)]
 
-        moderator = Moderator(model=MODEL,
-                              system_instructions="You are an expert copywriter for an ad agency.",
+        moderator = Moderator(model=MODEL, system_instructions="You are an expert copywriter for an ad agency.",
                               task="You are overseeing a focus group discussing what products would resonate with them for the solar panel category.",
                               combination_instructions=f"Here are focus group responses: \n<start>${{previous_responses}}<end>. Now based on the specifics of these responses, come up with a specific product for a solar panel company that would resonate with the focus group members. Be very specific. Answer in 50 words only.")
 
@@ -97,9 +93,8 @@ def main():
         # Default
         ############################
         zero_shot_task = "Come up with a specific product for a solar panel company that would resonate with conservatives. Be very specific. Answer in 50 words only."
-        zero_shot = Agent(model=MODEL,
-                        system_instructions="You are an expert copywriter for an ad agency.",
-                        task=zero_shot_task)
+        zero_shot = Agent(model=MODEL, system_instructions="You are an expert copywriter for an ad agency.",
+                          task=zero_shot_task)
         zero_shot_response = zero_shot.process()
 
         data_pt = {'focus_group_final': ensemble_response, 'zero_shot': zero_shot_response, 'idx': i + 1,
