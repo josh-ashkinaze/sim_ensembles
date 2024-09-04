@@ -8,6 +8,9 @@ import random
 import logging
 import re
 import os
+import numpy as np
+import pandas as pd
+from scipy.stats import bootstrap
 import chardet
 
 
@@ -259,13 +262,13 @@ def make_aesthetic(hex_color_list=None, with_gridlines=False, bold_title=False, 
 #####################################################################
 
 
-def pretty_print_desc_stats(data, n_bootstrap=1000, ci=False, ci_level=0.95, n_digits=2, seed=42):
+def pretty_print_desc_stats(data, n_bootstrap=10000, ci=False, ci_level=0.95, n_digits=2, seed=42):
     """
     Calculate descriptive statistics and print a LaTeX string in APA format.
 
     Args:
         data (array-like): Array of data to calculate statistics on.
-        n_bootstrap (int, optional): Number of bootstrap samples. Default is 1000.
+        n_bootstrap (int, optional): Number of bootstrap samples. Default is 10000.
         ci (bool, optional): Whether to include confidence intervals. Default is False.
         ci_level (float, optional): Confidence interval level if ci is True. Default is 0.95.
         n_digits (int, optional): Number of digits to round the values to. Default is 2.
@@ -274,32 +277,35 @@ def pretty_print_desc_stats(data, n_bootstrap=1000, ci=False, ci_level=0.95, n_d
     Returns:
         str: A formatted LaTeX string with the mean, median, and standard deviation,
              and optionally the confidence interval.
-    
-    Example:
-        >>> data = [1, 2, 3, 4, 5]
-        >>> print(pretty_print_desc_stats(data, 1000, False, 0.95, 2, 42))
-        $M = 3.00, Mdn = 3.00, SD = 1.41$
     """
     data = np.array(data)
     
-    # Calculate mean, median, and standard deviation
     mean = np.mean(data)
     median = np.median(data)
     sd = np.std(data, ddof=1)
     
-    mean = round(mean, n_digits)
-    median = round(median, n_digits)
-    sd = round(sd, n_digits)
-    
     if ci:
-        bootstrap_results = bootstrap_mean(data, n_bootstrap, ci_level, seed)
-        lower = round(bootstrap_results['lower'], n_digits)
-        upper = round(bootstrap_results['upper'], n_digits)
-        latex_string = f"$M = {mean}, Mdn = {median}, SD = {sd}, 95\\% \\text{{CI}} = [{lower}, {upper}]$"
+        bootstrap_results = bootstrap(
+            (data,),
+            np.mean,
+            n_resamples=n_bootstrap,
+            random_state=seed,
+            confidence_level=ci_level,
+        )
+        ci_lower = bootstrap_results.confidence_interval.low
+        ci_upper = bootstrap_results.confidence_interval.high
+        ci_str = f", {int(ci_level*100)}\\% \\text{{CI}} = [{ci_lower:.{n_digits}f}, {ci_upper:.{n_digits}f}]"
     else:
-        latex_string = f"$M = {mean}, Mdn = {median}, SD = {sd}$"
+        ci_str = ""
+    
+    mean_str = f"{mean:.{n_digits}f}"
+    median_str = f"{median:.{n_digits}f}"
+    sd_str = f"{sd:.{n_digits}f}"
+
+    latex_string = f"$M = {mean_str}, Mdn = {median_str}, SD = {sd_str}{ci_str}$"
     
     return latex_string
+
 
 
 def pretty_print_ci(stats_dict, n_digits=2):
@@ -326,34 +332,56 @@ def pretty_print_ci(stats_dict, n_digits=2):
     return latex_string
 
 
-def bootstrap_mean(array, n_bootstrap=1000, ci=95, seed=42):
+def bootstrap_mean(data, n_bootstrap=10000, ci=95, seed=42):
     """
-    Generate bootstrap confidence interval for the mean of the input data.
+    Generate bootstrap confidence interval for the mean of the input data using scipy.stats.bootstrap.
     
     Args:
-        array: The input data array.
-        n_bootstrap: The number of bootstrap samples to generate. Default is 1000.
+        data: The input data. Can be a Pandas Series, list, or numpy array.
+        n_bootstrap: The number of bootstrap samples to generate. Default is 10000.
         ci: The confidence interval percentage. Default is 95%.
-        seed: The random seed for reproducibility. Default is 416.
+        seed: The random seed for reproducibility. Default is 42.
     
     Returns:
         A dict with keys 'mean', 'lower', and 'upper'
-    """
-    np.random.seed(seed)  
-    bootstrap_means = np.array([
-        np.mean(np.random.choice(array, size=len(array), replace=True)) for _ in range(n_bootstrap)
-    ])
-    data_mean = np.mean(array)
     
-    lower_bound = np.percentile(bootstrap_means, (100 - ci) / 2)
-    upper_bound = np.percentile(bootstrap_means, 100 - (100 - ci) / 2)
-    return {'mean': data_mean, 'lower': lower_bound, 'upper': upper_bound}
+    Raises:
+        ValueError: If the input data is not a recognized type or is empty.
+    """
+    if isinstance(data, pd.Series):
+        data = data.to_numpy()
+    elif isinstance(data, list):
+        data = np.array(data)
+    elif isinstance(data, np.ndarray):
+        pass  # Already a numpy array
+    else:
+        raise ValueError("Input data must be a Pandas Series, list, or numpy array")
 
+    if data.size == 0:
+        raise ValueError("Input data is empty")
 
+    data = data.ravel()
+
+    data_mean = np.mean(data)
+
+    result = bootstrap(
+        (data,),
+        np.mean,
+        n_resamples=n_bootstrap,
+        random_state=seed,
+        confidence_level=ci/100,
+        method='percentile'
+    )
+
+    return {
+        'mean': data_mean,
+        'lower': result.confidence_interval.low,
+        'upper': result.confidence_interval.high
+    }
 
 def bootstrap_statistic(df, group, val, func='mean', n_bootstrap=5000, ci=0.95, seed=42, digits=2, pretty_print=False):
     """
-    Perform bootstrapping on a given dataframe and compute a statistic.
+    Perform bootstrapping on a given dataframe and compute a statistic using scipy.stats.bootstrap.
 
     Args:
         df (pd.DataFrame): DataFrame containing the data.
@@ -368,24 +396,17 @@ def bootstrap_statistic(df, group, val, func='mean', n_bootstrap=5000, ci=0.95, 
         pretty_print (boolean, default=False): If True then print results as latex string
 
     Returns:
-        dict: A dictionary containing the sample mean, lower and upper confidence intervals, 
-              and the bootstrapped distribution. If `group` is not None, returns a dictionary 
-              of such dictionaries keyed by group values.
+        dict: A dictionary containing the sample statistic, lower and upper confidence intervals. 
+              If `group` is not None, returns a dictionary of such dictionaries keyed by group values.
 
     Example:
         >>> df = pd.DataFrame({'group': ['A', 'A', 'B', 'B'], 'val': [1, 2, 3, 4]})
         >>> result = bootstrap_statistic(df, 'group', 'val', 'mean')
         >>> print(result)
-        {'A': {'mean': 1.5, 'lower': 1.0, 'upper': 2.0, 'dist': array([1., 1., 2., ..., 1., 2., 2.])},
-         'B': {'mean': 3.5, 'lower': 3.0, 'upper': 4.0, 'dist': array([4., 3., 3., ..., 3., 3., 4.])}}
+        {'A': {'statistic': 1.5, 'lower': 1.0, 'upper': 2.0},
+         'B': {'statistic': 3.5, 'lower': 3.0, 'upper': 4.0}}
     """
     
-    def bootstrap_sample(data, func, n_bootstrap):
-        n = len(data)
-        samples = np.random.choice(data, size=(n_bootstrap, n), replace=True)
-        stats = np.apply_along_axis(func, 1, samples)
-        return stats
-
     # Map string functions to numpy functions
     func_map = {
         'mean': np.mean,
@@ -402,28 +423,23 @@ def bootstrap_statistic(df, group, val, func='mean', n_bootstrap=5000, ci=0.95, 
         if func is None:
             raise ValueError("Function string not recognized. Only support strings if they are 'mean', 'median', 'sd', 'var', 'min', 'max', or 'sum'.")
 
-    np.random.seed(seed)
+    def perform_bootstrap(data):
+        result = stats.bootstrap((data,), func, n_resamples=n_bootstrap, random_state=seed, confidence_level=ci)
+        statistic = func(data)
+        return {
+            'statistic': statistic,
+            'lower': result.confidence_interval.low,
+            'upper': result.confidence_interval.high
+        }
 
     if group is not None:
         results = {}
-        groups = df[group].unique()
-        for g in groups:
-            data = df[df[group] == g][val].values
-            stats = bootstrap_sample(data, func, n_bootstrap)
-            mean = np.mean(stats)
-            lower = np.percentile(stats, (1 - ci) / 2 * 100)
-            upper = np.percentile(stats, (1 + ci) / 2 * 100)
-            results[g] = {'mean': mean, 'lower': lower, 'upper': upper, 'dist': stats}
+        for g, group_data in df.groupby(group):
+            results[g] = perform_bootstrap(group_data[val].values)
         return results
     else:
-        data = df[val].values
-        stats = bootstrap_sample(data, func, n_bootstrap)
-        mean = np.mean(stats)
-        lower = np.percentile(stats, (1 - ci) / 2 * 100)
-        upper = np.percentile(stats, (1 + ci) / 2 * 100)
-        res = {'mean': mean, 'lower': lower, 'upper': upper, 'dist': stats}
+        res = perform_bootstrap(df[val].values)
         if pretty_print:
             pretty_print_ci(res)
         return res
-
 
