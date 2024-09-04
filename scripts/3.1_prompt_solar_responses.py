@@ -78,12 +78,11 @@ def main(n, model, temp):
         kwargs = {}
 
     data_pts = []
-    for i in tqdm(range(n), desc="Processing prompts"):
+    for i in tqdm(range(n)):
         # Focus group task and participants
         focus_group_task = "What specific product details for a solar panel company would resonate with you personally? Be very specific; you are in a focus group. Answer in 20 words."
         focus_group_participants = [Agent(model=model, kwargs=kwargs, task=focus_group_task, ideology='conservative')
-        for _ in
-                                    range(10)]
+        for _ in range(10)]
 
         moderator = Moderator(model=model,
                               kwargs=kwargs,
