@@ -48,7 +48,7 @@ def main():
 
         for i in range(1, 16):
             data_pt = {'uid': uid, 'duration': duration, 'age': age, 'gender': gender, 'educ': educ, 'commit': commit,
-                'choice': row[f'{i}_lm'], 'comprehension': comprehension
+                'choice': row[f'{i}_lm'], 'comprehension': comprehension, 'idx': i, 'unique_choice_shown': f'{i}_{uid}'
 
             }
             data_pts.append(data_pt)
