@@ -1,0 +1,58 @@
+---
+title: "mixed_models"
+output: html_document
+date: "2024-09-05"
+---
+
+```{r setup, include=FALSE}
+library(lme4)
+library(stargazer)
+library(dplyr)
+library(ggplot2)
+
+df <- pd.read_csv("../data/processed/all_experiments.csv")
+
+
+models <- list()
+
+var_components <- list()
+
+for (domain_value in unique(df$domain)) {
+  print(domain_value)
+  df_domain <- df %>% filter(domain == domain_value)  
+  model <- glmer(focus_chosen ~ 1 + (1|uid), family = 'binomial', data = df_domain)
+  models[[domain_value]] <- model
+  
+  var_comp <- as.data.frame(VarCorr(model))$vcov
+  var_components[[domain_value]] <- round(var_comp, 3)
+}
+
+models[['all']] <- glmer(focus_chosen ~ 1 + (1|uid/study), family = 'binomial', data = df)
+
+var_comp_all <- as.data.frame(VarCorr(models[['all']]))
+var_components[['all_uid']] <- round(var_comp_all$vcov[1], 3)  # Variance of uid
+var_components[['all_study']] <- round(var_comp_all$vcov[2], 3)  # Variance of study
+
+variance_rows <- list(
+  c("Random Intercept Variance (Person)", unlist(var_components[unique(df$domain)]), var_components[['all_uid']]),
+  c("Random Intercept Variance (Study)", rep("", length(unique(df$domain))), var_components[['all_study']])
+)
+column.labels <- tools::toTitleCase(unique(df$domain))
+
+stargazer(models, 
+          column.labels = c(column.labels, "Overall"), 
+          dep.var.caption = 'Dependent Variable: Plurals Option Chosen', 
+          dep.var.labels.include = FALSE, 
+          apply.coef = exp,  # Exponentiate coefficients to show odds ratios
+          t.auto = F, 
+          p.auto = F, 
+          report = "vct*",  # Report coefficient, t-value, and standard error
+          add.lines = variance_rows,  # Add both variance components, 
+          title="Mixed effect logistic results from efficacy studies. Participants chose between Plurals or non-Plurals output. The outcome variable is choosing Plurals. The fixed effect intercept is the odds ratios of choosing Plurals output, accounting for random effects. Models 1-3 have a random intercept for participants. Model 4 collapses across studies, with a random intercept for participants nested within studies.",
+          type='latex', 
+          label="summary", 
+          out="../tables/model_summary.tex"
+)
+
+
+```
