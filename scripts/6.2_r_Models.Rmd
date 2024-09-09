@@ -10,7 +10,7 @@ library(stargazer)
 library(dplyr)
 library(ggplot2)
 
-df <- pd.read_csv("../data/processed/all_experiments.csv")
+df <- read.csv("../data/processed/all_experiments.csv")
 
 
 models <- list()
@@ -27,7 +27,7 @@ for (domain_value in unique(df$domain)) {
   var_components[[domain_value]] <- round(var_comp, 3)
 }
 
-models[['all']] <- glmer(focus_chosen ~ 1 + (1|uid/study), family = 'binomial', data = df)
+models[['all']] <- glmer(focus_chosen ~ 1 + (1|uid) + (1|study), family = 'binomial', data = df)
 
 var_comp_all <- as.data.frame(VarCorr(models[['all']]))
 var_components[['all_uid']] <- round(var_comp_all$vcov[1], 3)  # Variance of uid
@@ -43,15 +43,28 @@ stargazer(models,
           column.labels = c(column.labels, "Overall"), 
           dep.var.caption = 'Dependent Variable: Plurals Option Chosen', 
           dep.var.labels.include = FALSE, 
-          apply.coef = exp,  # Exponentiate coefficients to show odds ratios
+          apply.coef = exp,  
           t.auto = F, 
           p.auto = F, 
-          report = "vct*",  # Report coefficient, t-value, and standard error
-          add.lines = variance_rows,  # Add both variance components, 
-          title="Mixed effect logistic results from efficacy studies. Participants chose between Plurals or non-Plurals output. The outcome variable is choosing Plurals. The fixed effect intercept is the odds ratios of choosing Plurals output, accounting for random effects. Models 1-3 have a random intercept for participants. Model 4 collapses across studies, with a random intercept for participants nested within studies.",
+          report = "vct*",  
+          add.lines = variance_rows,  
+          title="Mixed effect logistic results from efficacy studies. Participants chose between Plurals or non-Plurals output. The outcome variable is choosing Plurals. The fixed effect intercept is the baseline odds of choosing Plurals output, accounting for random effects. Models 1-3 have a random intercept for participants. Model 4 collapses across studies, with a random intercept for participants crossed with a random intercept for studies.",
           type='latex', 
           label="summary", 
           out="../tables/model_summary.tex"
+)
+
+
+stargazer(models, 
+          column.labels = c(column.labels, "Overall"), 
+          dep.var.caption = 'Dependent Variable: Plurals Option Chosen', 
+          dep.var.labels.include = FALSE, 
+          report = "vct*",  
+          add.lines = variance_rows,  
+          title="Mixed effect logistic results from efficacy studies. Participants chose between Plurals or non-Plurals output. The outcome variable is choosing Plurals. The fixed effect intercept is the baseline odds of choosing Plurals output, accounting for random effects. Models 1-3 have a random intercept for participants. Model 4 collapses across studies, with a random intercept for participants crossed with a random intercept for studies.",
+          type='latex', 
+          label="summary", 
+          out="../tables/model_logit_scale_summary.tex"
 )
 
 
