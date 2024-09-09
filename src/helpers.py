@@ -290,10 +290,9 @@ def pretty_print_desc_stats(data, n_bootstrap=10000, ci=False, ci_level=0.95, n_
             np.mean,
             n_resamples=n_bootstrap,
             random_state=seed,
-            confidence_level=ci_level,
+            confidence_level=ci_level
         )
-        ci_lower = bootstrap_results.confidence_interval.low
-        ci_upper = bootstrap_results.confidence_interval.high
+        ci_lower, ci_upper = bootstrap_results.confidence_interval
         ci_str = f", {int(ci_level*100)}\\% \\text{{CI}} = [{ci_lower:.{n_digits}f}, {ci_upper:.{n_digits}f}]"
     else:
         ci_str = ""
@@ -303,32 +302,7 @@ def pretty_print_desc_stats(data, n_bootstrap=10000, ci=False, ci_level=0.95, n_
     sd_str = f"{sd:.{n_digits}f}"
 
     latex_string = f"$M = {mean_str}, Mdn = {median_str}, SD = {sd_str}{ci_str}$"
-    
-    return latex_string
 
-
-
-def pretty_print_ci(stats_dict, n_digits=2):
-    """
-    Format the confidence interval statistics into a LaTeX-compatible string.
-
-    Args:
-        stats_dict (dict): Dictionary containing 'mean', 'lower', and 'upper' keys.
-        n_digits (int, optional): Number of digits to round the values to. Default is 2.
-
-    Returns:
-        str: A formatted LaTeX string with the mean and confidence interval.
-    
-    Example:
-        >>> stats = {'mean': 1.23456, 'lower': 0.98765, 'upper': 1.54321}
-        >>> print(pretty_print_ci(stats, 2))
-        $M = 1.23, 95\\% \\text{CI} = [0.99, 1.54]$
-    """
-    mean = round(stats_dict['mean'], n_digits)
-    lower = round(stats_dict['lower'], n_digits)
-    upper = round(stats_dict['upper'], n_digits)
-    
-    latex_string = f"$M = {mean}, 95\\% \\text{{CI}} = [{lower}, {upper}]$"
     return latex_string
 
 
@@ -378,68 +352,4 @@ def bootstrap_mean(data, n_bootstrap=10000, ci=95, seed=42):
         'lower': result.confidence_interval.low,
         'upper': result.confidence_interval.high
     }
-
-def bootstrap_statistic(df, group, val, func='mean', n_bootstrap=5000, ci=0.95, seed=42, digits=2, pretty_print=False):
-    """
-    Perform bootstrapping on a given dataframe and compute a statistic using scipy.stats.bootstrap.
-
-    Args:
-        df (pd.DataFrame): DataFrame containing the data.
-        group (str or None): Column name to group by. If None, bootstrap on the entire dataframe.
-        val (str): Column name of the values to bootstrap.
-        func (str or function): Statistic function to apply to each bootstrap sample. 
-                                Can be 'mean', 'median', 'sd', 'var', 'min', 'max', 'sum' or a custom function.
-        n_bootstrap (int, optional): Number of bootstrap samples. Default is 5000.
-        ci (float, default=0.95): Confidence interval.
-        seed (int, default=42): Random seed for reproducibility
-        digits (int, default=2): Number of digits if print rounded string for latex
-        pretty_print (boolean, default=False): If True then print results as latex string
-
-    Returns:
-        dict: A dictionary containing the sample statistic, lower and upper confidence intervals. 
-              If `group` is not None, returns a dictionary of such dictionaries keyed by group values.
-
-    Example:
-        >>> df = pd.DataFrame({'group': ['A', 'A', 'B', 'B'], 'val': [1, 2, 3, 4]})
-        >>> result = bootstrap_statistic(df, 'group', 'val', 'mean')
-        >>> print(result)
-        {'A': {'statistic': 1.5, 'lower': 1.0, 'upper': 2.0},
-         'B': {'statistic': 3.5, 'lower': 3.0, 'upper': 4.0}}
-    """
-    
-    # Map string functions to numpy functions
-    func_map = {
-        'mean': np.mean,
-        'median': np.median,
-        'sd': np.std,
-        'var': np.var,
-        'min': np.min,
-        'max': np.max,
-        'sum': np.sum
-    }
-
-    if isinstance(func, str):
-        func = func_map.get(func)
-        if func is None:
-            raise ValueError("Function string not recognized. Only support strings if they are 'mean', 'median', 'sd', 'var', 'min', 'max', or 'sum'.")
-
-    def perform_bootstrap(data):
-        result = stats.bootstrap((data,), func, n_resamples=n_bootstrap, random_state=seed, confidence_level=ci)
-        statistic = func(data)
-        return {
-            'statistic': statistic,
-            'lower': result.confidence_interval.low,
-            'upper': result.confidence_interval.high
-        }
-
-    if group is not None:
-        results = {}
-        for g, group_data in df.groupby(group):
-            results[g] = perform_bootstrap(group_data[val].values)
-        return results
-    else:
-        res = perform_bootstrap(df[val].values)
-        if pretty_print:
-            pretty_print_ci(res)
-        return res
 
