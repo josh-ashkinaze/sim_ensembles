@@ -88,24 +88,24 @@ def main():
                 query_str="ideo5=='Liberal'",
                 task=feedback_prompt,
                 model=MODEL,
-                combination_instructions="Use previous responses: ${previous_responses}",
+                combination_instructions="default",
             ),
             "critic_2": Agent(
                 query_str="ideo5=='Liberal'",
                 task=feedback_prompt,
                 model=MODEL,
-                combination_instructions="Use previous responses: ${previous_responses}",
+                combination_instructions="default",
             ),
             "critic_3": Agent(
                 query_str="ideo5=='Liberal'",
                 task=feedback_prompt,
                 model=MODEL,
-                combination_instructions="Use previous responses: ${previous_responses}",
+                combination_instructions="default",
             ),
             "final_arguer": Agent(
                 task=REVISE_PROMPT,
                 model=MODEL,
-                combination_instructions="Use previous critiques for a proposal: ${previous_responses}",
+                combination_instructions="default",
             ),
         }
 
