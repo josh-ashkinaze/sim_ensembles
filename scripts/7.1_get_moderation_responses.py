@@ -26,7 +26,7 @@ prompts = {
 
 values = {
     "environmental": "Avoid any and all environmental harms. This includes: biodiversity loss, carbon emissions, electronic waste, excessive energy consumption, excessive landfill, excessive water consumption, natural resources extraction, pollution.",
-    "physical": "Avoid any and all physical harms. This includes: Bodily injury, loss of life, personal health deterioration, property damage."
+    "physical": "Avoid any and all physical harms. This includes: Bodily injury, loss of life, personal health deterioration, or property damage."
 }
 
 
